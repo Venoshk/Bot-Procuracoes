@@ -1,0 +1,3167 @@
+2026-01-20 09:45:44,470 [INFO] Warning: uc_driver not found. Getting it now:
+2026-01-20 09:45:44,822 [INFO] *** [34m[102mchromedriver to download[0m = [34m[103m132.0.6834.159[0m [31m[107m([91m[107mLegacy Version[31m[107m)[0m
+2026-01-20 09:45:44,823 [INFO] Downloading chromedriver-win64.zip from:
+https://storage.googleapis.com/chrome-for-testing-public/132.0.6834.159/win64/chromedriver-win64.zip ...
+2026-01-20 09:45:49,037 [INFO] [34m[106mDownload Complete![0m
+2026-01-20 09:45:49,069 [INFO] Extracting ['chromedriver.exe'] from chromedriver-win64.zip ...
+2026-01-20 09:45:49,173 [INFO] [34m[102mUnzip Complete![0m
+2026-01-20 09:45:49,173 [INFO] The file [uc_driver.exe] was saved to:
+[34m[103m[34m[103mC:\Users\paulo.santos\Procuracoes\.venv\Lib\site-packages\seleniumbase\drivers\[0m
+[34m[103muc_driver.exe[0m[0m
+2026-01-20 09:45:49,174 [INFO] Making [uc_driver.exe 132.0.6834.159] executable ...
+2026-01-20 09:45:49,174 [INFO] [34m[106m[uc_driver.exe 132.0.6834.159] is now ready for use![0m
+2026-01-20 09:45:52,819 [INFO] [96m
+2026-01-20 09:45:52,820 [INFO] 2026-01-20 09:45:52 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 09:45:52,820 [INFO] [39m
+2026-01-20 09:45:57,502 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_38t13xls
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 09:45:57,765 [INFO] Enabling autodiscover targets
+2026-01-20 09:45:59,526 [INFO] [96m
+2026-01-20 09:45:59,526 [INFO] 2026-01-20 09:45:59 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 09:45:59,526 [INFO] [39m
+2026-01-20 09:45:59,547 [INFO] [91m
+2026-01-20 09:45:59,548 [INFO] 2026-01-20 09:45:59 ======= LOG ======== > Erro ao indentificar pagina do Gov
+2026-01-20 09:45:59,549 [INFO] [39m
+2026-01-20 09:46:06,863 [INFO] [91m
+2026-01-20 09:46:06,864 [INFO] 2026-01-20 09:46:06 ======= LOG ======== > Erro ao clicar na tabela Recebidas: 
+ Element {//button[.//span[normalize-space()='Recebidas']]} was not found after 7 seconds!
+2026-01-20 09:46:06,864 [INFO] [39m
+2026-01-20 09:46:48,813 [INFO] Execução interrompida pelo usuário.
+2026-01-20 09:46:48,942 [INFO] [96m
+2026-01-20 09:46:48,942 [INFO] 2026-01-20 09:46:48 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 09:46:48,943 [INFO] [39m
+2026-01-20 09:47:31,206 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_qtn89m4c
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 09:47:31,512 [INFO] Enabling autodiscover targets
+2026-01-20 09:48:05,486 [INFO] [96m
+2026-01-20 09:48:05,487 [INFO] 2026-01-20 09:48:05 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 09:48:05,487 [INFO] [39m
+2026-01-20 09:49:37,731 [INFO] [96m
+2026-01-20 09:49:37,732 [INFO] 2026-01-20 09:49:37 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 09:49:37,732 [INFO] [39m
+2026-01-20 09:49:46,075 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_02hxwxj0
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 09:49:46,360 [INFO] Enabling autodiscover targets
+2026-01-20 09:50:13,441 [INFO] [96m
+2026-01-20 09:50:13,442 [INFO] 2026-01-20 09:50:13 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 09:50:13,443 [INFO] [39m
+2026-01-20 09:50:18,093 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_6cpo7l1j
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 09:50:18,355 [INFO] Enabling autodiscover targets
+2026-01-20 09:50:26,315 [INFO] [96m
+2026-01-20 09:50:26,319 [INFO] 2026-01-20 09:50:26 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 09:50:26,320 [INFO] [39m
+2026-01-20 09:50:50,000 [INFO] [96m
+2026-01-20 09:50:50,001 [INFO] 2026-01-20 09:50:50 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 09:50:50,002 [INFO] [39m
+2026-01-20 09:51:21,733 [INFO] [96m
+2026-01-20 09:51:21,734 [INFO] 2026-01-20 09:51:21 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 09:51:21,734 [INFO] [39m
+2026-01-20 09:51:38,670 [INFO] [92m
+2026-01-20 09:51:38,674 [INFO] 2026-01-20 09:51:38 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 09:51:38,675 [INFO] [39m
+2026-01-20 09:51:53,852 [INFO] [96m
+2026-01-20 09:51:53,853 [INFO] 2026-01-20 09:51:53 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 09:51:53,853 [INFO] [39m
+2026-01-20 09:52:07,000 [INFO] [96m
+2026-01-20 09:52:07,001 [INFO] 2026-01-20 09:52:07 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 09:52:07,002 [INFO] [39m
+2026-01-20 09:55:35,995 [INFO] [96m
+2026-01-20 09:55:35,997 [INFO] 2026-01-20 09:55:35 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 09:55:35,997 [INFO] [39m
+2026-01-20 09:55:40,659 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_jq4yv8g0
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 09:55:40,958 [INFO] Enabling autodiscover targets
+2026-01-20 09:55:42,785 [INFO] [96m
+2026-01-20 09:55:42,785 [INFO] 2026-01-20 09:55:42 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 09:55:42,786 [INFO] [39m
+2026-01-20 09:55:45,444 [INFO] [96m
+2026-01-20 09:55:45,444 [INFO] 2026-01-20 09:55:45 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 09:55:45,445 [INFO] [39m
+2026-01-20 09:55:50,782 [INFO] [96m
+2026-01-20 09:55:50,782 [INFO] 2026-01-20 09:55:50 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 09:55:50,783 [INFO] [39m
+2026-01-20 09:55:56,234 [INFO] [92m
+2026-01-20 09:55:56,235 [INFO] 2026-01-20 09:55:56 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 09:55:56,236 [INFO] [39m
+2026-01-20 09:56:33,901 [INFO] [91m
+2026-01-20 09:56:33,901 [INFO] 2026-01-20 09:56:33 ======= LOG ======== > Erro ao clicar na tabela Recebidas: 
+ Element {//button[.//span[normalize-space()='Recebidas']]} was not found after 7 seconds!
+2026-01-20 09:56:33,901 [INFO] [39m
+2026-01-20 10:00:11,356 [INFO] [96m
+2026-01-20 10:00:11,357 [INFO] 2026-01-20 10:00:11 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:00:11,357 [INFO] [39m
+2026-01-20 10:00:16,011 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_pj7uc1c2
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:00:16,297 [INFO] Enabling autodiscover targets
+2026-01-20 10:00:18,290 [INFO] [96m
+2026-01-20 10:00:18,291 [INFO] 2026-01-20 10:00:18 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:00:18,291 [INFO] [39m
+2026-01-20 10:00:20,733 [INFO] [96m
+2026-01-20 10:00:20,734 [INFO] 2026-01-20 10:00:20 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:00:20,734 [INFO] [39m
+2026-01-20 10:00:33,601 [INFO] [96m
+2026-01-20 10:00:33,602 [INFO] 2026-01-20 10:00:33 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:00:33,602 [INFO] [39m
+2026-01-20 10:00:38,722 [INFO] [92m
+2026-01-20 10:00:38,723 [INFO] 2026-01-20 10:00:38 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 10:00:38,724 [INFO] [39m
+2026-01-20 10:01:57,256 [INFO] [96m
+2026-01-20 10:01:57,257 [INFO] 2026-01-20 10:01:57 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:01:57,262 [INFO] [39m
+2026-01-20 10:02:01,971 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc__sc_fkmb
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:02:02,236 [INFO] Enabling autodiscover targets
+2026-01-20 10:02:04,108 [INFO] [96m
+2026-01-20 10:02:04,109 [INFO] 2026-01-20 10:02:04 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:02:04,109 [INFO] [39m
+2026-01-20 10:02:06,563 [INFO] [96m
+2026-01-20 10:02:06,564 [INFO] 2026-01-20 10:02:06 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:02:06,564 [INFO] [39m
+2026-01-20 10:02:42,666 [INFO] [96m
+2026-01-20 10:02:42,667 [INFO] 2026-01-20 10:02:42 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:02:42,667 [INFO] [39m
+2026-01-20 10:02:47,518 [INFO] [92m
+2026-01-20 10:02:47,518 [INFO] 2026-01-20 10:02:47 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 10:02:47,519 [INFO] [39m
+2026-01-20 10:03:09,359 [INFO] [96m
+2026-01-20 10:03:09,360 [INFO] 2026-01-20 10:03:09 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 10:03:09,361 [INFO] [39m
+2026-01-20 10:03:12,094 [INFO] [96m
+2026-01-20 10:03:12,095 [INFO] 2026-01-20 10:03:12 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 10:03:12,095 [INFO] [39m
+2026-01-20 10:03:28,690 [INFO] [96m
+2026-01-20 10:03:28,692 [INFO] 2026-01-20 10:03:28 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 10:03:28,693 [INFO] [39m
+2026-01-20 10:04:02,857 [INFO] [96m
+2026-01-20 10:04:02,859 [INFO] 2026-01-20 10:04:02 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:04:02,860 [INFO] [39m
+2026-01-20 10:04:07,667 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_467lj9l_
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:04:07,959 [INFO] Enabling autodiscover targets
+2026-01-20 10:04:09,946 [INFO] [96m
+2026-01-20 10:04:09,947 [INFO] 2026-01-20 10:04:09 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:04:09,947 [INFO] [39m
+2026-01-20 10:04:12,430 [INFO] [96m
+2026-01-20 10:04:12,430 [INFO] 2026-01-20 10:04:12 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:04:12,431 [INFO] [39m
+2026-01-20 10:04:17,467 [INFO] [96m
+2026-01-20 10:04:17,469 [INFO] 2026-01-20 10:04:17 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:04:17,469 [INFO] [39m
+2026-01-20 10:04:22,905 [INFO] [92m
+2026-01-20 10:04:22,906 [INFO] 2026-01-20 10:04:22 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 10:04:22,907 [INFO] [39m
+2026-01-20 10:06:14,984 [INFO] [96m
+2026-01-20 10:06:14,985 [INFO] 2026-01-20 10:06:14 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:06:14,985 [INFO] [39m
+2026-01-20 10:06:19,708 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_9q_0jq4d
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:06:19,983 [INFO] Enabling autodiscover targets
+2026-01-20 10:06:21,753 [INFO] [96m
+2026-01-20 10:06:21,754 [INFO] 2026-01-20 10:06:21 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:06:21,754 [INFO] [39m
+2026-01-20 10:06:24,302 [INFO] [96m
+2026-01-20 10:06:24,303 [INFO] 2026-01-20 10:06:24 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:06:24,304 [INFO] [39m
+2026-01-20 10:06:29,350 [INFO] [96m
+2026-01-20 10:06:29,351 [INFO] 2026-01-20 10:06:29 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:06:29,352 [INFO] [39m
+2026-01-20 10:06:34,276 [INFO] [92m
+2026-01-20 10:06:34,277 [INFO] 2026-01-20 10:06:34 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 10:06:34,277 [INFO] [39m
+2026-01-20 10:06:51,093 [INFO] [96m
+2026-01-20 10:06:51,094 [INFO] 2026-01-20 10:06:51 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:06:51,095 [INFO] [39m
+2026-01-20 10:06:55,827 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_115suqyl
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:06:56,109 [INFO] Enabling autodiscover targets
+2026-01-20 10:06:57,987 [INFO] [96m
+2026-01-20 10:06:57,988 [INFO] 2026-01-20 10:06:57 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:06:57,988 [INFO] [39m
+2026-01-20 10:07:00,457 [INFO] [96m
+2026-01-20 10:07:00,457 [INFO] 2026-01-20 10:07:00 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:07:00,458 [INFO] [39m
+2026-01-20 10:07:05,495 [INFO] [96m
+2026-01-20 10:07:05,495 [INFO] 2026-01-20 10:07:05 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:07:05,496 [INFO] [39m
+2026-01-20 10:07:11,278 [INFO] [92m
+2026-01-20 10:07:11,279 [INFO] 2026-01-20 10:07:11 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 10:07:11,279 [INFO] [39m
+2026-01-20 10:14:03,088 [INFO] [96m
+2026-01-20 10:14:03,090 [INFO] 2026-01-20 10:14:03 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:14:03,090 [INFO] [39m
+2026-01-20 10:14:07,887 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_f2hvll0i
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:14:08,150 [INFO] Enabling autodiscover targets
+2026-01-20 10:14:09,960 [INFO] [96m
+2026-01-20 10:14:09,961 [INFO] 2026-01-20 10:14:09 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:14:09,962 [INFO] [39m
+2026-01-20 10:14:12,932 [INFO] [96m
+2026-01-20 10:14:12,933 [INFO] 2026-01-20 10:14:12 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:14:12,934 [INFO] [39m
+2026-01-20 10:14:17,985 [INFO] [96m
+2026-01-20 10:14:17,986 [INFO] 2026-01-20 10:14:17 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:14:17,987 [INFO] [39m
+2026-01-20 10:14:33,960 [INFO] [91m
+2026-01-20 10:14:33,962 [INFO] 2026-01-20 10:14:33 ======= LOG ======== > Tentativa 1 - Erro ao verificar login com certificado: 
+ Element {#menu-servicos} was not found after 7 seconds!
+2026-01-20 10:14:33,962 [INFO] [39m
+2026-01-20 10:15:02,667 [INFO] [91m
+2026-01-20 10:15:02,667 [INFO] 2026-01-20 10:15:02 ======= LOG ======== > Tentativa 2 - Erro ao verificar login com certificado: 
+ Element {#menu-servicos} was not found after 7 seconds!
+2026-01-20 10:15:02,668 [INFO] [39m
+2026-01-20 10:24:09,187 [INFO] [96m
+2026-01-20 10:24:09,188 [INFO] 2026-01-20 10:24:09 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:24:09,189 [INFO] [39m
+2026-01-20 10:24:14,001 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_3r6iwz3l
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:24:14,295 [INFO] Enabling autodiscover targets
+2026-01-20 10:24:16,101 [INFO] [96m
+2026-01-20 10:24:16,102 [INFO] 2026-01-20 10:24:16 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:24:16,102 [INFO] [39m
+2026-01-20 10:24:24,302 [INFO] [96m
+2026-01-20 10:24:24,302 [INFO] 2026-01-20 10:24:24 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:24:24,303 [INFO] [39m
+2026-01-20 10:24:29,615 [INFO] [96m
+2026-01-20 10:24:29,616 [INFO] 2026-01-20 10:24:29 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:24:29,616 [INFO] [39m
+2026-01-20 10:24:34,428 [INFO] [92m
+2026-01-20 10:24:34,429 [INFO] 2026-01-20 10:24:34 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 10:24:34,429 [INFO] [39m
+2026-01-20 10:24:42,006 [INFO] [91m
+2026-01-20 10:24:42,007 [INFO] 2026-01-20 10:24:42 ======= LOG ======== > Erro ao clicar na tabela Recebidas: 
+ Element {//button[.//span[normalize-space()='Recebidas']]} was not found after 7 seconds!
+2026-01-20 10:24:42,007 [INFO] [39m
+2026-01-20 10:24:52,354 [INFO] [91m
+2026-01-20 10:24:52,355 [INFO] 2026-01-20 10:24:52 ======= LOG ======== > Erro ao abrir filtros: 
+ Element {#botao-mostrar-filtros-recebidas} was not found after 10 seconds!
+2026-01-20 10:24:52,355 [INFO] [39m
+2026-01-20 10:25:02,847 [INFO] [91m
+2026-01-20 10:25:02,848 [INFO] 2026-01-20 10:25:02 ======= LOG ======== > Erro ao clicar no botão Filtrar: 
+ Element {#botao-filtrar-recebidas} was not found after 10 seconds!
+2026-01-20 10:25:02,848 [INFO] [39m
+2026-01-20 10:26:26,500 [INFO] [96m
+2026-01-20 10:26:26,501 [INFO] 2026-01-20 10:26:26 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 10:26:26,502 [INFO] [39m
+2026-01-20 10:26:31,200 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_myyc4017
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 10:26:31,473 [INFO] Enabling autodiscover targets
+2026-01-20 10:26:33,328 [INFO] [96m
+2026-01-20 10:26:33,329 [INFO] 2026-01-20 10:26:33 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 10:26:33,329 [INFO] [39m
+2026-01-20 10:26:35,784 [INFO] [96m
+2026-01-20 10:26:35,784 [INFO] 2026-01-20 10:26:35 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 10:26:35,785 [INFO] [39m
+2026-01-20 10:26:41,113 [INFO] [96m
+2026-01-20 10:26:41,114 [INFO] 2026-01-20 10:26:41 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 10:26:41,115 [INFO] [39m
+2026-01-20 10:26:51,312 [INFO] [92m
+2026-01-20 10:26:51,313 [INFO] 2026-01-20 10:26:51 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 10:26:51,313 [INFO] [39m
+2026-01-20 10:27:16,446 [INFO] [96m
+2026-01-20 10:27:16,447 [INFO] 2026-01-20 10:27:16 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 10:27:16,447 [INFO] [39m
+2026-01-20 10:27:19,148 [INFO] [96m
+2026-01-20 10:27:19,149 [INFO] 2026-01-20 10:27:19 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 10:27:19,149 [INFO] [39m
+2026-01-20 11:30:12,132 [INFO] [96m
+2026-01-20 11:30:12,134 [INFO] 2026-01-20 11:30:12 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:30:12,134 [INFO] [39m
+2026-01-20 11:30:16,866 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_3dzraafc
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:30:17,139 [INFO] Enabling autodiscover targets
+2026-01-20 11:30:17,652 [INFO] [91m
+2026-01-20 11:30:17,653 [INFO] 2026-01-20 11:30:17 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 11:30:17,653 [INFO] [39m
+2026-01-20 11:30:17,654 [INFO] [91m
+2026-01-20 11:30:17,654 [INFO] 2026-01-20 11:30:17 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 11:30:17,655 [INFO] [39m
+2026-01-20 11:30:20,492 [INFO] [91m
+2026-01-20 11:30:20,492 [INFO] 2026-01-20 11:30:20 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 11:30:20,493 [INFO] [39m
+2026-01-20 11:30:36,047 [INFO] [96m
+2026-01-20 11:30:36,048 [INFO] 2026-01-20 11:30:36 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:30:36,048 [INFO] [39m
+2026-01-20 11:30:42,204 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_5d188s26
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:30:43,006 [INFO] Enabling autodiscover targets
+2026-01-20 11:30:49,768 [INFO] [96m
+2026-01-20 11:30:49,770 [INFO] 2026-01-20 11:30:49 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 11:30:49,771 [INFO] [39m
+2026-01-20 11:31:06,645 [INFO] [96m
+2026-01-20 11:31:06,647 [INFO] 2026-01-20 11:31:06 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 11:31:06,648 [INFO] [39m
+2026-01-20 11:31:25,746 [INFO] [96m
+2026-01-20 11:31:25,747 [INFO] 2026-01-20 11:31:25 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 11:31:25,748 [INFO] [39m
+2026-01-20 11:31:34,114 [INFO] [92m
+2026-01-20 11:31:34,115 [INFO] 2026-01-20 11:31:34 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 11:31:34,116 [INFO] [39m
+2026-01-20 11:31:46,148 [INFO] [96m
+2026-01-20 11:31:46,150 [INFO] 2026-01-20 11:31:46 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 11:31:46,151 [INFO] [39m
+2026-01-20 11:32:00,809 [INFO] [96m
+2026-01-20 11:32:00,811 [INFO] 2026-01-20 11:32:00 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 11:32:00,812 [INFO] [39m
+2026-01-20 11:32:12,381 [INFO] [96m
+2026-01-20 11:32:12,382 [INFO] 2026-01-20 11:32:12 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 11:32:12,383 [INFO] [39m
+2026-01-20 11:44:24,830 [INFO] [96m
+2026-01-20 11:44:24,831 [INFO] 2026-01-20 11:44:24 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:44:24,831 [INFO] [39m
+2026-01-20 11:44:29,537 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_1cadpux2
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:44:29,800 [INFO] Enabling autodiscover targets
+2026-01-20 11:44:30,351 [INFO] [91m
+2026-01-20 11:44:30,351 [INFO] 2026-01-20 11:44:30 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 11:44:30,351 [INFO] [39m
+2026-01-20 11:44:30,352 [INFO] [91m
+2026-01-20 11:44:30,352 [INFO] 2026-01-20 11:44:30 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 11:44:30,353 [INFO] [39m
+2026-01-20 11:44:33,194 [INFO] [91m
+2026-01-20 11:44:33,194 [INFO] 2026-01-20 11:44:33 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 11:44:33,195 [INFO] [39m
+2026-01-20 11:44:40,681 [INFO] [96m
+2026-01-20 11:44:40,683 [INFO] 2026-01-20 11:44:40 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:44:40,684 [INFO] [39m
+2026-01-20 11:44:45,508 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_phupmq4_
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:44:45,787 [INFO] Enabling autodiscover targets
+2026-01-20 11:44:46,332 [INFO] [91m
+2026-01-20 11:44:46,332 [INFO] 2026-01-20 11:44:46 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 11:44:46,333 [INFO] [39m
+2026-01-20 11:44:46,334 [INFO] [91m
+2026-01-20 11:44:46,334 [INFO] 2026-01-20 11:44:46 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 11:44:46,335 [INFO] [39m
+2026-01-20 11:45:14,747 [INFO] [96m
+2026-01-20 11:45:14,749 [INFO] 2026-01-20 11:45:14 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:45:14,750 [INFO] [39m
+2026-01-20 11:45:20,455 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_461hrcyy
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:45:20,745 [INFO] Enabling autodiscover targets
+2026-01-20 11:45:31,495 [INFO] [91m
+2026-01-20 11:45:31,497 [INFO] 2026-01-20 11:45:31 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 11:45:31,498 [INFO] [39m
+2026-01-20 11:45:31,498 [INFO] [91m
+2026-01-20 11:45:31,500 [INFO] 2026-01-20 11:45:31 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 11:45:31,500 [INFO] [39m
+2026-01-20 11:45:45,857 [INFO] [96m
+2026-01-20 11:45:45,859 [INFO] 2026-01-20 11:45:45 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:45:45,861 [INFO] [39m
+2026-01-20 11:45:59,011 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_1lav9q0u
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:45:59,288 [INFO] Enabling autodiscover targets
+2026-01-20 11:46:05,059 [INFO] [96m
+2026-01-20 11:46:05,061 [INFO] 2026-01-20 11:46:05 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 11:46:05,062 [INFO] [39m
+2026-01-20 11:46:25,827 [INFO] [96m
+2026-01-20 11:46:25,834 [INFO] 2026-01-20 11:46:25 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 11:46:25,836 [INFO] [39m
+2026-01-20 11:46:35,195 [INFO] [96m
+2026-01-20 11:46:35,197 [INFO] 2026-01-20 11:46:35 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 11:46:35,198 [INFO] [39m
+2026-01-20 11:47:06,143 [INFO] [92m
+2026-01-20 11:47:06,146 [INFO] 2026-01-20 11:47:05 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 11:47:06,147 [INFO] [39m
+2026-01-20 11:47:37,648 [INFO] [91m
+2026-01-20 11:47:37,650 [INFO] 2026-01-20 11:47:37 ======= LOG ======== > Erro ao extrair JSON: HTTPConnectionPool(host='localhost', port=52391): Max retries exceeded with url: /session/5263efcfe0a4e79b3efb0e41c0fec628/goog/cdp/execute (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x00000284CF041250>: Failed to establish a new connection: [WinError 10061] Nenhuma conexão pôde ser feita porque a máquina de destino as recusou ativamente'))
+2026-01-20 11:47:37,654 [INFO] [39m
+2026-01-20 11:49:55,050 [INFO] [96m
+2026-01-20 11:49:55,051 [INFO] 2026-01-20 11:49:55 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:49:55,051 [INFO] [39m
+2026-01-20 11:49:59,790 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_thtxl7tb
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:50:00,083 [INFO] Enabling autodiscover targets
+2026-01-20 11:50:02,150 [INFO] [96m
+2026-01-20 11:50:02,151 [INFO] 2026-01-20 11:50:02 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 11:50:02,152 [INFO] [39m
+2026-01-20 11:50:04,624 [INFO] [96m
+2026-01-20 11:50:04,625 [INFO] 2026-01-20 11:50:04 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 11:50:04,625 [INFO] [39m
+2026-01-20 11:50:09,952 [INFO] [96m
+2026-01-20 11:50:09,955 [INFO] 2026-01-20 11:50:09 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 11:50:09,956 [INFO] [39m
+2026-01-20 11:50:25,527 [INFO] [92m
+2026-01-20 11:50:25,527 [INFO] 2026-01-20 11:50:25 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 11:50:25,528 [INFO] [39m
+2026-01-20 11:51:30,318 [INFO] [96m
+2026-01-20 11:51:30,320 [INFO] 2026-01-20 11:51:30 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:51:30,320 [INFO] [39m
+2026-01-20 11:51:37,177 [INFO] [96m
+2026-01-20 11:51:37,178 [INFO] 2026-01-20 11:51:37 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:51:37,179 [INFO] [39m
+2026-01-20 11:51:41,926 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_bzeohog4
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:51:42,220 [INFO] Enabling autodiscover targets
+2026-01-20 11:51:44,068 [INFO] [96m
+2026-01-20 11:51:44,068 [INFO] 2026-01-20 11:51:44 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 11:51:44,069 [INFO] [39m
+2026-01-20 11:51:46,522 [INFO] [96m
+2026-01-20 11:51:46,523 [INFO] 2026-01-20 11:51:46 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 11:51:46,523 [INFO] [39m
+2026-01-20 11:51:51,853 [INFO] [96m
+2026-01-20 11:51:51,853 [INFO] 2026-01-20 11:51:51 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 11:51:51,854 [INFO] [39m
+2026-01-20 11:51:56,809 [INFO] [92m
+2026-01-20 11:51:56,810 [INFO] 2026-01-20 11:51:56 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 11:51:56,810 [INFO] [39m
+2026-01-20 11:52:54,637 [INFO] [96m
+2026-01-20 11:52:54,639 [INFO] 2026-01-20 11:52:54 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:52:54,639 [INFO] [39m
+2026-01-20 11:52:59,397 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_ulk40q4_
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:52:59,667 [INFO] Enabling autodiscover targets
+2026-01-20 11:53:01,450 [INFO] [96m
+2026-01-20 11:53:01,451 [INFO] 2026-01-20 11:53:01 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 11:53:01,451 [INFO] [39m
+2026-01-20 11:53:03,971 [INFO] [96m
+2026-01-20 11:53:03,971 [INFO] 2026-01-20 11:53:03 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 11:53:03,971 [INFO] [39m
+2026-01-20 11:53:09,282 [INFO] [96m
+2026-01-20 11:53:09,283 [INFO] 2026-01-20 11:53:09 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 11:53:09,283 [INFO] [39m
+2026-01-20 11:53:13,839 [INFO] [92m
+2026-01-20 11:53:13,840 [INFO] 2026-01-20 11:53:13 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 11:53:13,840 [INFO] [39m
+2026-01-20 11:53:49,063 [INFO] [96m
+2026-01-20 11:53:49,065 [INFO] 2026-01-20 11:53:49 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:53:49,065 [INFO] [39m
+2026-01-20 11:53:53,960 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_3kymfqgv
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:53:54,223 [INFO] Enabling autodiscover targets
+2026-01-20 11:53:54,753 [INFO] [91m
+2026-01-20 11:53:54,753 [INFO] 2026-01-20 11:53:54 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 11:53:54,754 [INFO] [39m
+2026-01-20 11:53:54,754 [INFO] [91m
+2026-01-20 11:53:54,755 [INFO] 2026-01-20 11:53:54 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 11:53:54,755 [INFO] [39m
+2026-01-20 11:53:57,639 [INFO] [91m
+2026-01-20 11:53:57,639 [INFO] 2026-01-20 11:53:57 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 11:53:57,639 [INFO] [39m
+2026-01-20 11:54:22,484 [INFO] [96m
+2026-01-20 11:54:22,485 [INFO] 2026-01-20 11:54:22 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:54:22,486 [INFO] [39m
+2026-01-20 11:54:27,199 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_mcjgn3kq
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:54:27,474 [INFO] Enabling autodiscover targets
+2026-01-20 11:54:27,999 [INFO] [91m
+2026-01-20 11:54:28,000 [INFO] 2026-01-20 11:54:27 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 11:54:28,000 [INFO] [39m
+2026-01-20 11:54:28,000 [INFO] [91m
+2026-01-20 11:54:28,000 [INFO] 2026-01-20 11:54:28 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 11:54:28,001 [INFO] [39m
+2026-01-20 11:54:30,886 [INFO] [91m
+2026-01-20 11:54:30,888 [INFO] 2026-01-20 11:54:30 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 11:54:30,889 [INFO] [39m
+2026-01-20 11:54:37,944 [INFO] [96m
+2026-01-20 11:54:37,946 [INFO] 2026-01-20 11:54:37 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:54:37,946 [INFO] [39m
+2026-01-20 11:54:42,857 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_0gk0iopm
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:54:43,126 [INFO] Enabling autodiscover targets
+2026-01-20 11:54:43,652 [INFO] [91m
+2026-01-20 11:54:43,653 [INFO] 2026-01-20 11:54:43 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 11:54:43,653 [INFO] [39m
+2026-01-20 11:54:43,654 [INFO] [91m
+2026-01-20 11:54:43,654 [INFO] 2026-01-20 11:54:43 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 11:54:43,655 [INFO] [39m
+2026-01-20 11:55:00,932 [INFO] [96m
+2026-01-20 11:55:00,935 [INFO] 2026-01-20 11:54:59 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:55:00,937 [INFO] [39m
+2026-01-20 11:55:09,721 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_gyh15k8k
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:55:10,000 [INFO] Enabling autodiscover targets
+2026-01-20 11:55:16,829 [INFO] [96m
+2026-01-20 11:55:16,831 [INFO] 2026-01-20 11:55:16 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 11:55:16,833 [INFO] [39m
+2026-01-20 11:55:31,113 [INFO] [96m
+2026-01-20 11:55:31,115 [INFO] 2026-01-20 11:55:31 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 11:55:31,116 [INFO] [39m
+2026-01-20 11:55:42,562 [INFO] [96m
+2026-01-20 11:55:42,564 [INFO] 2026-01-20 11:55:41 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 11:55:42,566 [INFO] [39m
+2026-01-20 11:55:57,912 [INFO] [92m
+2026-01-20 11:55:57,913 [INFO] 2026-01-20 11:55:57 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 11:55:57,913 [INFO] [39m
+2026-01-20 11:56:25,108 [INFO] [91m
+2026-01-20 11:56:25,112 [INFO] 2026-01-20 11:56:25 ======= LOG ======== > Erro ao clicar na tabela Recebidas: Message: 
+ Element {//button[.//span[normalize-space()='Recebidas']]} was not present after 7 seconds!
+2026-01-20 11:56:25,113 [INFO] [39m
+2026-01-20 11:57:51,383 [INFO] [96m
+2026-01-20 11:57:51,385 [INFO] 2026-01-20 11:57:51 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 11:57:51,385 [INFO] [39m
+2026-01-20 11:57:56,112 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_uqhrsdzg
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 11:57:56,415 [INFO] Enabling autodiscover targets
+2026-01-20 11:57:58,211 [INFO] [96m
+2026-01-20 11:57:58,211 [INFO] 2026-01-20 11:57:58 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 11:57:58,212 [INFO] [39m
+2026-01-20 11:58:00,703 [INFO] [96m
+2026-01-20 11:58:00,703 [INFO] 2026-01-20 11:58:00 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 11:58:00,704 [INFO] [39m
+2026-01-20 11:58:06,089 [INFO] [96m
+2026-01-20 11:58:06,091 [INFO] 2026-01-20 11:58:06 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 11:58:06,091 [INFO] [39m
+2026-01-20 11:58:11,154 [INFO] [92m
+2026-01-20 11:58:11,155 [INFO] 2026-01-20 11:58:11 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 11:58:11,155 [INFO] [39m
+2026-01-20 11:58:51,589 [INFO] [91m
+2026-01-20 11:58:51,591 [INFO] 2026-01-20 11:58:51 ======= LOG ======== > Erro ao clicar na tabela Recebidas: Message: 
+ Element {/html/body/app-root/mf-portal-layout/portal-main-layout/portal-header/div/div/div/main/div/div/app-minhas-autorizacoes/div/div[2]/br-tab-set/div/nav/ul/li[2]/button} was not present after 7 seconds!
+2026-01-20 11:58:51,594 [INFO] [39m
+2026-01-20 13:01:35,073 [INFO] [96m
+2026-01-20 13:01:35,075 [INFO] 2026-01-20 13:01:35 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:01:35,075 [INFO] [39m
+2026-01-20 13:01:39,805 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_wbc3b1jj
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:01:40,068 [INFO] Enabling autodiscover targets
+2026-01-20 13:01:40,556 [INFO] [91m
+2026-01-20 13:01:40,556 [INFO] 2026-01-20 13:01:40 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 13:01:40,557 [INFO] [39m
+2026-01-20 13:01:40,557 [INFO] [91m
+2026-01-20 13:01:40,557 [INFO] 2026-01-20 13:01:40 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 13:01:40,557 [INFO] [39m
+2026-01-20 13:01:43,344 [INFO] [91m
+2026-01-20 13:01:43,344 [INFO] 2026-01-20 13:01:43 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 13:01:43,344 [INFO] [39m
+2026-01-20 13:02:08,307 [INFO] [96m
+2026-01-20 13:02:08,309 [INFO] 2026-01-20 13:02:08 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:02:08,309 [INFO] [39m
+2026-01-20 13:02:13,932 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc__kgijf75
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:02:14,203 [INFO] Enabling autodiscover targets
+2026-01-20 13:02:24,048 [INFO] [96m
+2026-01-20 13:02:24,050 [INFO] 2026-01-20 13:02:24 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:02:24,050 [INFO] [39m
+2026-01-20 13:02:32,169 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_skitfqn2
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:02:32,447 [INFO] Enabling autodiscover targets
+2026-01-20 13:02:44,708 [INFO] [91m
+2026-01-20 13:02:44,710 [INFO] 2026-01-20 13:02:44 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 13:02:44,710 [INFO] [39m
+2026-01-20 13:02:44,711 [INFO] [91m
+2026-01-20 13:02:44,711 [INFO] 2026-01-20 13:02:44 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 13:02:44,712 [INFO] [39m
+2026-01-20 13:02:47,587 [INFO] [91m
+2026-01-20 13:02:47,587 [INFO] 2026-01-20 13:02:47 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 13:02:47,587 [INFO] [39m
+2026-01-20 13:02:53,581 [INFO] [96m
+2026-01-20 13:02:53,583 [INFO] 2026-01-20 13:02:53 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:02:53,583 [INFO] [39m
+2026-01-20 13:02:59,869 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_cluz94d9
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:03:00,159 [INFO] Enabling autodiscover targets
+2026-01-20 13:03:02,673 [INFO] [96m
+2026-01-20 13:03:02,674 [INFO] 2026-01-20 13:03:02 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 13:03:02,675 [INFO] [39m
+2026-01-20 13:03:05,130 [INFO] [96m
+2026-01-20 13:03:05,131 [INFO] 2026-01-20 13:03:05 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 13:03:05,131 [INFO] [39m
+2026-01-20 13:03:10,444 [INFO] [96m
+2026-01-20 13:03:10,445 [INFO] 2026-01-20 13:03:10 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 13:03:10,445 [INFO] [39m
+2026-01-20 13:03:15,386 [INFO] [92m
+2026-01-20 13:03:15,387 [INFO] 2026-01-20 13:03:15 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 13:03:15,387 [INFO] [39m
+2026-01-20 13:03:39,696 [INFO] [91m
+2026-01-20 13:03:39,697 [INFO] 2026-01-20 13:03:39 ======= LOG ======== > Este driver não suporta add_cdp_listener diretamente.
+2026-01-20 13:03:39,697 [INFO] [39m
+2026-01-20 13:04:20,040 [INFO] [91m
+2026-01-20 13:04:20,041 [INFO] 2026-01-20 13:04:20 ======= LOG ======== > Erro ao clicar na tabela Recebidas: Message: 
+ Element {//button[.//span[normalize-space()='Recebidas']]} was not present after 7 seconds!
+2026-01-20 13:04:20,042 [INFO] [39m
+2026-01-20 13:06:47,671 [INFO] [96m
+2026-01-20 13:06:47,673 [INFO] 2026-01-20 13:06:47 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:06:47,673 [INFO] [39m
+2026-01-20 13:06:52,398 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_5uciidk7
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:06:52,671 [INFO] Enabling autodiscover targets
+2026-01-20 13:06:54,440 [INFO] [96m
+2026-01-20 13:06:54,440 [INFO] 2026-01-20 13:06:54 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 13:06:54,441 [INFO] [39m
+2026-01-20 13:06:56,918 [INFO] [96m
+2026-01-20 13:06:56,919 [INFO] 2026-01-20 13:06:56 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 13:06:56,919 [INFO] [39m
+2026-01-20 13:07:02,221 [INFO] [96m
+2026-01-20 13:07:02,222 [INFO] 2026-01-20 13:07:02 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 13:07:02,223 [INFO] [39m
+2026-01-20 13:07:07,597 [INFO] [92m
+2026-01-20 13:07:07,597 [INFO] 2026-01-20 13:07:07 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 13:07:07,598 [INFO] [39m
+2026-01-20 13:07:33,271 [INFO] [91m
+2026-01-20 13:07:33,272 [INFO] 2026-01-20 13:07:33 ======= LOG ======== > Este driver não suporta add_cdp_listener diretamente.
+2026-01-20 13:07:33,273 [INFO] [39m
+2026-01-20 13:08:57,646 [INFO] [96m
+2026-01-20 13:08:57,647 [INFO] 2026-01-20 13:08:57 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:08:57,647 [INFO] [39m
+2026-01-20 13:09:02,358 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_05jybalj
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:09:02,625 [INFO] Enabling autodiscover targets
+2026-01-20 13:09:03,090 [INFO] [91m
+2026-01-20 13:09:03,090 [INFO] 2026-01-20 13:09:03 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 13:09:03,090 [INFO] [39m
+2026-01-20 13:09:03,090 [INFO] [91m
+2026-01-20 13:09:03,091 [INFO] 2026-01-20 13:09:03 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 13:09:03,091 [INFO] [39m
+2026-01-20 13:09:05,931 [INFO] [91m
+2026-01-20 13:09:05,932 [INFO] 2026-01-20 13:09:05 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 13:09:05,932 [INFO] [39m
+2026-01-20 13:09:16,377 [INFO] [96m
+2026-01-20 13:09:16,378 [INFO] 2026-01-20 13:09:16 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:09:16,379 [INFO] [39m
+2026-01-20 13:09:23,231 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_xyfkgy44
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:09:23,520 [INFO] Enabling autodiscover targets
+2026-01-20 13:09:28,655 [INFO] [96m
+2026-01-20 13:09:28,655 [INFO] 2026-01-20 13:09:28 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 13:09:28,656 [INFO] [39m
+2026-01-20 13:09:31,122 [INFO] [96m
+2026-01-20 13:09:31,122 [INFO] 2026-01-20 13:09:31 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 13:09:31,122 [INFO] [39m
+2026-01-20 13:09:49,394 [INFO] [96m
+2026-01-20 13:09:49,395 [INFO] 2026-01-20 13:09:49 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 13:09:49,396 [INFO] [39m
+2026-01-20 13:09:57,258 [INFO] [92m
+2026-01-20 13:09:57,259 [INFO] 2026-01-20 13:09:57 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 13:09:57,259 [INFO] [39m
+2026-01-20 13:09:57,505 [INFO] [91m
+2026-01-20 13:09:57,505 [INFO] 2026-01-20 13:09:57 ======= LOG ======== > Erro ao extrair JSON: type object 'Procuracoes' has no attribute 'setupNetworkMonitoring'
+2026-01-20 13:09:57,505 [INFO] [39m
+2026-01-20 13:10:29,940 [INFO] [96m
+2026-01-20 13:10:29,941 [INFO] 2026-01-20 13:10:29 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:10:29,941 [INFO] [39m
+2026-01-20 13:10:37,513 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_ci9_w6d_
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:10:37,783 [INFO] Enabling autodiscover targets
+2026-01-20 13:10:41,500 [INFO] [91m
+2026-01-20 13:10:41,501 [INFO] 2026-01-20 13:10:41 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 13:10:41,501 [INFO] [39m
+2026-01-20 13:10:41,502 [INFO] [91m
+2026-01-20 13:10:41,502 [INFO] 2026-01-20 13:10:41 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 13:10:41,503 [INFO] [39m
+2026-01-20 13:10:53,864 [INFO] [96m
+2026-01-20 13:10:53,866 [INFO] 2026-01-20 13:10:53 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 13:10:53,866 [INFO] [39m
+2026-01-20 13:10:58,535 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_l88qqfz_
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 13:10:58,829 [INFO] Enabling autodiscover targets
+2026-01-20 13:11:00,602 [INFO] [96m
+2026-01-20 13:11:00,602 [INFO] 2026-01-20 13:11:00 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 13:11:00,602 [INFO] [39m
+2026-01-20 13:11:03,064 [INFO] [96m
+2026-01-20 13:11:03,064 [INFO] 2026-01-20 13:11:03 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 13:11:03,064 [INFO] [39m
+2026-01-20 13:11:19,079 [INFO] [96m
+2026-01-20 13:11:19,079 [INFO] 2026-01-20 13:11:19 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 13:11:19,079 [INFO] [39m
+2026-01-20 13:11:24,531 [INFO] [92m
+2026-01-20 13:11:24,532 [INFO] 2026-01-20 13:11:24 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 13:11:24,532 [INFO] [39m
+2026-01-20 13:11:28,283 [INFO] [96m
+2026-01-20 13:11:28,284 [INFO] 2026-01-20 13:11:28 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 13:11:28,284 [INFO] [39m
+2026-01-20 13:11:31,297 [INFO] [96m
+2026-01-20 13:11:31,297 [INFO] 2026-01-20 13:11:31 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 13:11:31,298 [INFO] [39m
+2026-01-20 13:11:32,414 [INFO] [96m
+2026-01-20 13:11:32,415 [INFO] 2026-01-20 13:11:32 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 13:11:32,415 [INFO] [39m
+2026-01-20 14:40:02,559 [INFO] [96m
+2026-01-20 14:40:02,561 [INFO] 2026-01-20 14:40:02 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 14:40:02,561 [INFO] [39m
+2026-01-20 14:40:07,331 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_0lml2xri
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 14:40:07,603 [INFO] Enabling autodiscover targets
+2026-01-20 14:40:09,669 [INFO] [96m
+2026-01-20 14:40:09,670 [INFO] 2026-01-20 14:40:09 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 14:40:09,670 [INFO] [39m
+2026-01-20 14:40:12,225 [INFO] [96m
+2026-01-20 14:40:12,226 [INFO] 2026-01-20 14:40:12 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 14:40:12,226 [INFO] [39m
+2026-01-20 14:40:17,386 [INFO] [96m
+2026-01-20 14:40:17,387 [INFO] 2026-01-20 14:40:17 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 14:40:17,387 [INFO] [39m
+2026-01-20 14:40:22,296 [INFO] [92m
+2026-01-20 14:40:22,297 [INFO] 2026-01-20 14:40:22 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 14:40:22,297 [INFO] [39m
+2026-01-20 14:40:29,930 [INFO] [91m
+2026-01-20 14:40:29,931 [INFO] 2026-01-20 14:40:29 ======= LOG ======== > Erro ao clicar na tabela Recebidas: 
+ Element {//button[.//span[normalize-space()='Recebidas']]} was not found after 7 seconds!
+2026-01-20 14:40:29,931 [INFO] [39m
+2026-01-20 14:40:40,394 [INFO] [91m
+2026-01-20 14:40:40,394 [INFO] 2026-01-20 14:40:40 ======= LOG ======== > Erro ao abrir filtros: 
+ Element {#botao-mostrar-filtros-recebidas} was not found after 10 seconds!
+2026-01-20 14:40:40,394 [INFO] [39m
+2026-01-20 14:40:50,702 [INFO] [91m
+2026-01-20 14:40:50,703 [INFO] 2026-01-20 14:40:50 ======= LOG ======== > Erro ao clicar no botão Filtrar: 
+ Element {#botao-filtrar-recebidas} was not found after 10 seconds!
+2026-01-20 14:40:50,703 [INFO] [39m
+2026-01-20 14:51:39,216 [INFO] [96m
+2026-01-20 14:51:39,217 [INFO] 2026-01-20 14:51:39 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 14:51:39,217 [INFO] [39m
+2026-01-20 14:51:43,912 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_t8k3qvy0
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 14:51:44,184 [INFO] Enabling autodiscover targets
+2026-01-20 14:51:44,634 [INFO] [91m
+2026-01-20 14:51:44,634 [INFO] 2026-01-20 14:51:44 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 14:51:44,634 [INFO] [39m
+2026-01-20 14:51:44,635 [INFO] [91m
+2026-01-20 14:51:44,635 [INFO] 2026-01-20 14:51:44 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 14:51:44,635 [INFO] [39m
+2026-01-20 14:51:47,445 [INFO] [91m
+2026-01-20 14:51:47,445 [INFO] 2026-01-20 14:51:47 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 14:51:47,446 [INFO] [39m
+2026-01-20 14:51:54,215 [INFO] [96m
+2026-01-20 14:51:54,216 [INFO] 2026-01-20 14:51:54 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 14:51:54,216 [INFO] [39m
+2026-01-20 14:52:00,161 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_juabo3ng
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 14:52:00,427 [INFO] Enabling autodiscover targets
+2026-01-20 14:52:07,636 [INFO] [96m
+2026-01-20 14:52:07,638 [INFO] 2026-01-20 14:52:07 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 14:52:07,638 [INFO] [39m
+2026-01-20 14:52:44,352 [INFO] [96m
+2026-01-20 14:52:44,352 [INFO] 2026-01-20 14:52:44 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 14:52:44,353 [INFO] [39m
+2026-01-20 14:52:51,679 [INFO] [96m
+2026-01-20 14:52:51,679 [INFO] 2026-01-20 14:52:51 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 14:52:51,680 [INFO] [39m
+2026-01-20 14:53:08,437 [INFO] [92m
+2026-01-20 14:53:08,438 [INFO] 2026-01-20 14:53:08 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 14:53:08,438 [INFO] [39m
+2026-01-20 14:53:12,122 [INFO] [96m
+2026-01-20 14:53:12,123 [INFO] 2026-01-20 14:53:12 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 14:53:12,123 [INFO] [39m
+2026-01-20 14:53:17,743 [INFO] [96m
+2026-01-20 14:53:17,744 [INFO] 2026-01-20 14:53:17 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 14:53:17,745 [INFO] [39m
+2026-01-20 14:53:30,152 [INFO] [96m
+2026-01-20 14:53:30,153 [INFO] 2026-01-20 14:53:30 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 14:53:30,154 [INFO] [39m
+2026-01-20 15:02:24,595 [INFO] [96m
+2026-01-20 15:02:24,597 [INFO] 2026-01-20 15:02:24 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 15:02:24,597 [INFO] [39m
+2026-01-20 15:02:29,316 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_6qhcid75
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 15:02:29,580 [INFO] Enabling autodiscover targets
+2026-01-20 15:02:30,071 [INFO] [91m
+2026-01-20 15:02:30,071 [INFO] 2026-01-20 15:02:30 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 15:02:30,071 [INFO] [39m
+2026-01-20 15:02:30,072 [INFO] [91m
+2026-01-20 15:02:30,072 [INFO] 2026-01-20 15:02:30 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 15:02:30,072 [INFO] [39m
+2026-01-20 15:02:32,884 [INFO] [91m
+2026-01-20 15:02:32,885 [INFO] 2026-01-20 15:02:32 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 15:02:32,885 [INFO] [39m
+2026-01-20 15:03:28,588 [INFO] [96m
+2026-01-20 15:03:28,589 [INFO] 2026-01-20 15:03:28 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 15:03:28,589 [INFO] [39m
+2026-01-20 15:03:33,311 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_kw9mf8kg
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 15:03:33,585 [INFO] Enabling autodiscover targets
+2026-01-20 15:03:35,358 [INFO] [96m
+2026-01-20 15:03:35,358 [INFO] 2026-01-20 15:03:35 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 15:03:35,358 [INFO] [39m
+2026-01-20 15:03:37,812 [INFO] [96m
+2026-01-20 15:03:37,812 [INFO] 2026-01-20 15:03:37 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 15:03:37,812 [INFO] [39m
+2026-01-20 15:03:43,139 [INFO] [96m
+2026-01-20 15:03:43,140 [INFO] 2026-01-20 15:03:43 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 15:03:43,140 [INFO] [39m
+2026-01-20 15:04:02,996 [INFO] [92m
+2026-01-20 15:04:02,996 [INFO] 2026-01-20 15:04:02 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 15:04:02,996 [INFO] [39m
+2026-01-20 15:04:06,899 [INFO] [96m
+2026-01-20 15:04:06,900 [INFO] 2026-01-20 15:04:06 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 15:04:06,901 [INFO] [39m
+2026-01-20 15:04:12,524 [INFO] [96m
+2026-01-20 15:04:12,524 [INFO] 2026-01-20 15:04:12 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 15:04:12,525 [INFO] [39m
+2026-01-20 15:04:16,088 [INFO] [96m
+2026-01-20 15:04:16,089 [INFO] 2026-01-20 15:04:16 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 15:04:16,090 [INFO] [39m
+2026-01-20 15:04:56,135 [INFO] Dados encontrados: 1139
+2026-01-20 15:10:21,130 [INFO] [96m
+2026-01-20 15:10:21,132 [INFO] 2026-01-20 15:10:21 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 15:10:21,132 [INFO] [39m
+2026-01-20 15:10:25,887 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_m6upwnf_
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 15:10:26,150 [INFO] Enabling autodiscover targets
+2026-01-20 15:10:28,180 [INFO] [96m
+2026-01-20 15:10:28,181 [INFO] 2026-01-20 15:10:28 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 15:10:28,181 [INFO] [39m
+2026-01-20 15:10:30,653 [INFO] [96m
+2026-01-20 15:10:30,653 [INFO] 2026-01-20 15:10:30 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 15:10:30,654 [INFO] [39m
+2026-01-20 15:11:22,379 [INFO] [96m
+2026-01-20 15:11:22,380 [INFO] 2026-01-20 15:11:22 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 15:11:22,380 [INFO] [39m
+2026-01-20 15:11:27,472 [INFO] [92m
+2026-01-20 15:11:27,472 [INFO] 2026-01-20 15:11:27 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 15:11:27,472 [INFO] [39m
+2026-01-20 15:11:31,290 [INFO] [96m
+2026-01-20 15:11:31,290 [INFO] 2026-01-20 15:11:31 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 15:11:31,291 [INFO] [39m
+2026-01-20 15:11:36,943 [INFO] [96m
+2026-01-20 15:11:36,943 [INFO] 2026-01-20 15:11:36 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 15:11:36,943 [INFO] [39m
+2026-01-20 15:11:40,508 [INFO] [96m
+2026-01-20 15:11:40,508 [INFO] 2026-01-20 15:11:40 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 15:11:40,509 [INFO] [39m
+2026-01-20 15:12:17,923 [INFO] Dados encontrados: 1139
+2026-01-20 15:12:45,804 [INFO] [91m
+2026-01-20 15:12:45,806 [INFO] 2026-01-20 15:12:45 ======= LOG ======== > Error ao percorrer linhas da tabela: '<' not supported between instances of 'ResultSet' and 'int'
+2026-01-20 15:12:45,806 [INFO] [39m
+2026-01-20 15:14:14,725 [INFO] [96m
+2026-01-20 15:14:14,726 [INFO] 2026-01-20 15:14:14 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 15:14:14,726 [INFO] [39m
+2026-01-20 15:14:19,390 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_sxamr7il
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 15:14:19,668 [INFO] Enabling autodiscover targets
+2026-01-20 15:14:21,688 [INFO] [96m
+2026-01-20 15:14:21,689 [INFO] 2026-01-20 15:14:21 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 15:14:21,689 [INFO] [39m
+2026-01-20 15:14:24,155 [INFO] [96m
+2026-01-20 15:14:24,155 [INFO] 2026-01-20 15:14:24 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 15:14:24,156 [INFO] [39m
+2026-01-20 15:14:40,842 [INFO] [96m
+2026-01-20 15:14:40,842 [INFO] 2026-01-20 15:14:40 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 15:14:40,843 [INFO] [39m
+2026-01-20 15:14:45,307 [INFO] [92m
+2026-01-20 15:14:45,308 [INFO] 2026-01-20 15:14:45 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 15:14:45,308 [INFO] [39m
+2026-01-20 15:14:49,166 [INFO] [96m
+2026-01-20 15:14:49,166 [INFO] 2026-01-20 15:14:49 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 15:14:49,166 [INFO] [39m
+2026-01-20 15:14:54,786 [INFO] [96m
+2026-01-20 15:14:54,786 [INFO] 2026-01-20 15:14:54 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 15:14:54,787 [INFO] [39m
+2026-01-20 15:14:58,366 [INFO] [96m
+2026-01-20 15:14:58,366 [INFO] 2026-01-20 15:14:58 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 15:14:58,366 [INFO] [39m
+2026-01-20 15:15:28,456 [INFO] [96m
+2026-01-20 15:15:28,458 [INFO] 2026-01-20 15:15:28 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 15:15:28,459 [INFO] [39m
+2026-01-20 15:15:33,168 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_ldndrz_f
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 15:15:33,438 [INFO] Enabling autodiscover targets
+2026-01-20 15:15:33,938 [INFO] [91m
+2026-01-20 15:15:33,939 [INFO] 2026-01-20 15:15:33 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 15:15:33,939 [INFO] [39m
+2026-01-20 15:15:33,939 [INFO] [91m
+2026-01-20 15:15:33,940 [INFO] 2026-01-20 15:15:33 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 15:15:33,940 [INFO] [39m
+2026-01-20 15:15:36,850 [INFO] [91m
+2026-01-20 15:15:36,850 [INFO] 2026-01-20 15:15:36 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 15:15:36,850 [INFO] [39m
+2026-01-20 15:21:02,369 [INFO] [96m
+2026-01-20 15:21:02,370 [INFO] 2026-01-20 15:21:02 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 15:21:02,370 [INFO] [39m
+2026-01-20 15:21:07,056 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_3_b2cqyw
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 15:21:07,327 [INFO] Enabling autodiscover targets
+2026-01-20 15:21:09,118 [INFO] [96m
+2026-01-20 15:21:09,118 [INFO] 2026-01-20 15:21:09 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 15:21:09,119 [INFO] [39m
+2026-01-20 15:21:11,658 [INFO] [96m
+2026-01-20 15:21:11,659 [INFO] 2026-01-20 15:21:11 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 15:21:11,659 [INFO] [39m
+2026-01-20 15:22:03,176 [INFO] [96m
+2026-01-20 15:22:03,176 [INFO] 2026-01-20 15:22:03 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 15:22:03,176 [INFO] [39m
+2026-01-20 15:22:08,360 [INFO] [92m
+2026-01-20 15:22:08,361 [INFO] 2026-01-20 15:22:08 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 15:22:08,361 [INFO] [39m
+2026-01-20 15:43:47,253 [INFO] [96m
+2026-01-20 15:43:47,255 [INFO] 2026-01-20 15:43:47 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 15:43:47,255 [INFO] [39m
+2026-01-20 15:43:51,969 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_l4ob5ayi
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 15:43:52,245 [INFO] Enabling autodiscover targets
+2026-01-20 15:43:54,031 [INFO] [96m
+2026-01-20 15:43:54,032 [INFO] 2026-01-20 15:43:54 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 15:43:54,032 [INFO] [39m
+2026-01-20 15:43:56,463 [INFO] [96m
+2026-01-20 15:43:56,463 [INFO] 2026-01-20 15:43:56 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 15:43:56,464 [INFO] [39m
+2026-01-20 15:44:01,773 [INFO] [96m
+2026-01-20 15:44:01,774 [INFO] 2026-01-20 15:44:01 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 15:44:01,774 [INFO] [39m
+2026-01-20 16:39:07,973 [INFO] [92m
+2026-01-20 16:39:07,987 [INFO] 2026-01-20 16:39:07 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 16:39:07,988 [INFO] [39m
+2026-01-20 16:39:11,759 [INFO] [96m
+2026-01-20 16:39:11,760 [INFO] 2026-01-20 16:39:11 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 16:39:11,760 [INFO] [39m
+2026-01-20 16:39:17,634 [INFO] [96m
+2026-01-20 16:39:17,634 [INFO] 2026-01-20 16:39:17 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 16:39:17,635 [INFO] [39m
+2026-01-20 16:39:21,215 [INFO] [96m
+2026-01-20 16:39:21,215 [INFO] 2026-01-20 16:39:21 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 16:39:21,215 [INFO] [39m
+2026-01-20 16:39:56,390 [INFO] Encontradas 1139 linhas na página atual.
+2026-01-20 16:44:41,578 [INFO] [96m
+2026-01-20 16:44:41,579 [INFO] 2026-01-20 16:44:41 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 16:44:41,579 [INFO] [39m
+2026-01-20 16:44:46,292 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_cv_1jbld
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 16:44:46,584 [INFO] Enabling autodiscover targets
+2026-01-20 16:44:48,376 [INFO] [96m
+2026-01-20 16:44:48,377 [INFO] 2026-01-20 16:44:48 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 16:44:48,377 [INFO] [39m
+2026-01-20 16:44:50,881 [INFO] [96m
+2026-01-20 16:44:50,881 [INFO] 2026-01-20 16:44:50 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 16:44:50,882 [INFO] [39m
+2026-01-20 16:45:22,838 [INFO] [96m
+2026-01-20 16:45:22,839 [INFO] 2026-01-20 16:45:22 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 16:45:22,839 [INFO] [39m
+2026-01-20 16:45:28,537 [INFO] [92m
+2026-01-20 16:45:28,538 [INFO] 2026-01-20 16:45:28 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 16:45:28,538 [INFO] [39m
+2026-01-20 16:45:32,189 [INFO] [96m
+2026-01-20 16:45:32,190 [INFO] 2026-01-20 16:45:32 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 16:45:32,190 [INFO] [39m
+2026-01-20 16:45:37,835 [INFO] [96m
+2026-01-20 16:45:37,836 [INFO] 2026-01-20 16:45:37 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 16:45:37,836 [INFO] [39m
+2026-01-20 16:45:41,425 [INFO] [96m
+2026-01-20 16:45:41,425 [INFO] 2026-01-20 16:45:41 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 16:45:41,426 [INFO] [39m
+2026-01-20 16:46:14,114 [INFO] Encontradas 1127 linhas na segunda tabela.
+2026-01-20 16:46:29,514 [INFO] Encontradas 1127 linhas na página atual.
+2026-01-20 17:04:41,392 [INFO] [96m
+2026-01-20 17:04:41,393 [INFO] 2026-01-20 17:04:41 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 17:04:41,393 [INFO] [39m
+2026-01-20 17:04:46,151 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_96lqfeh9
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 17:04:46,416 [INFO] Enabling autodiscover targets
+2026-01-20 17:04:48,206 [INFO] [96m
+2026-01-20 17:04:48,207 [INFO] 2026-01-20 17:04:48 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 17:04:48,207 [INFO] [39m
+2026-01-20 17:04:50,647 [INFO] [96m
+2026-01-20 17:04:50,647 [INFO] 2026-01-20 17:04:50 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 17:04:50,648 [INFO] [39m
+2026-01-20 17:04:55,988 [INFO] [96m
+2026-01-20 17:04:55,988 [INFO] 2026-01-20 17:04:55 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 17:04:55,989 [INFO] [39m
+2026-01-20 17:05:01,018 [INFO] [92m
+2026-01-20 17:05:01,018 [INFO] 2026-01-20 17:05:01 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 17:05:01,018 [INFO] [39m
+2026-01-20 17:05:08,650 [INFO] [91m
+2026-01-20 17:05:08,651 [INFO] 2026-01-20 17:05:08 ======= LOG ======== > Erro ao clicar na tabela Recebidas: 
+ Element {//button[.//span[normalize-space()='Recebidas']]} was not found after 7 seconds!
+2026-01-20 17:05:08,651 [INFO] [39m
+2026-01-20 17:05:30,448 [INFO] [96m
+2026-01-20 17:05:30,449 [INFO] 2026-01-20 17:05:30 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 17:05:30,449 [INFO] [39m
+2026-01-20 17:05:35,130 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_ac8w8au3
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 17:05:35,390 [INFO] Enabling autodiscover targets
+2026-01-20 17:05:37,253 [INFO] [96m
+2026-01-20 17:05:37,254 [INFO] 2026-01-20 17:05:37 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 17:05:37,254 [INFO] [39m
+2026-01-20 17:05:39,691 [INFO] [96m
+2026-01-20 17:05:39,691 [INFO] 2026-01-20 17:05:39 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 17:05:39,691 [INFO] [39m
+2026-01-20 17:06:00,015 [INFO] [96m
+2026-01-20 17:06:00,016 [INFO] 2026-01-20 17:06:00 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 17:06:00,016 [INFO] [39m
+2026-01-20 17:06:05,932 [INFO] [92m
+2026-01-20 17:06:05,932 [INFO] 2026-01-20 17:06:05 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 17:06:05,933 [INFO] [39m
+2026-01-20 17:06:09,604 [INFO] [96m
+2026-01-20 17:06:09,605 [INFO] 2026-01-20 17:06:09 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 17:06:09,605 [INFO] [39m
+2026-01-20 17:06:15,179 [INFO] [96m
+2026-01-20 17:06:15,180 [INFO] 2026-01-20 17:06:15 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 17:06:15,180 [INFO] [39m
+2026-01-20 17:06:18,751 [INFO] [96m
+2026-01-20 17:06:18,752 [INFO] 2026-01-20 17:06:18 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 17:06:18,753 [INFO] [39m
+2026-01-20 17:06:35,323 [INFO] Encontradas 1127 linhas na segunda tabela.
+2026-01-20 17:06:35,324 [INFO] Encontradas 1127 linhas na página atual.
+2026-01-20 17:07:18,989 [INFO] Erro ao processar uma linha: module 'database_manager.BancoDeDados' has no attribute 'salvar_procuracao'
+2026-01-20 17:08:44,183 [INFO] [96m
+2026-01-20 17:08:44,184 [INFO] 2026-01-20 17:08:44 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 17:08:44,185 [INFO] [39m
+2026-01-20 17:08:48,849 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_6bxi0p_c
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 17:08:49,118 [INFO] Enabling autodiscover targets
+2026-01-20 17:08:50,931 [INFO] [96m
+2026-01-20 17:08:50,931 [INFO] 2026-01-20 17:08:50 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 17:08:50,932 [INFO] [39m
+2026-01-20 17:09:18,082 [INFO] [96m
+2026-01-20 17:09:18,083 [INFO] 2026-01-20 17:09:18 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 17:09:18,083 [INFO] [39m
+2026-01-20 17:09:23,282 [INFO] [96m
+2026-01-20 17:09:23,283 [INFO] 2026-01-20 17:09:23 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 17:09:23,283 [INFO] [39m
+2026-01-20 17:09:28,229 [INFO] [92m
+2026-01-20 17:09:28,229 [INFO] 2026-01-20 17:09:28 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 17:09:28,229 [INFO] [39m
+2026-01-20 17:09:31,899 [INFO] [96m
+2026-01-20 17:09:31,900 [INFO] 2026-01-20 17:09:31 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 17:09:31,901 [INFO] [39m
+2026-01-20 17:09:37,444 [INFO] [96m
+2026-01-20 17:09:37,445 [INFO] 2026-01-20 17:09:37 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 17:09:37,445 [INFO] [39m
+2026-01-20 17:09:41,015 [INFO] [96m
+2026-01-20 17:09:41,015 [INFO] 2026-01-20 17:09:41 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 17:09:41,016 [INFO] [39m
+2026-01-20 17:09:51,523 [INFO] Encontradas 1127 linhas na segunda tabela.
+2026-01-20 17:09:51,524 [INFO] Encontradas 1127 linhas na página atual.
+2026-01-20 17:11:12,207 [INFO] [96m
+2026-01-20 17:11:12,208 [INFO] 2026-01-20 17:11:12 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 17:11:12,208 [INFO] [39m
+2026-01-20 17:11:16,865 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_71et3hj7
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 17:11:17,133 [INFO] Enabling autodiscover targets
+2026-01-20 17:11:17,616 [INFO] [91m
+2026-01-20 17:11:17,616 [INFO] 2026-01-20 17:11:17 ======= LOG ======== > WEBDRIVER NÃO PÔDE SER INICIALIZADO
+2026-01-20 17:11:17,617 [INFO] [39m
+2026-01-20 17:11:17,617 [INFO] [91m
+2026-01-20 17:11:17,617 [INFO] 2026-01-20 17:11:17 ======= LOG ======== > server rejected WebSocket connection: HTTP 500
+2026-01-20 17:11:17,618 [INFO] [39m
+2026-01-20 17:11:20,423 [INFO] [91m
+2026-01-20 17:11:20,424 [INFO] 2026-01-20 17:11:20 ======= LOG ======== > Erro ao processar : 'NoneType' object has no attribute 'is_text_visible'
+2026-01-20 17:11:20,424 [INFO] [39m
+2026-01-20 17:11:42,140 [INFO] [96m
+2026-01-20 17:11:42,141 [INFO] 2026-01-20 17:11:42 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 17:11:42,142 [INFO] [39m
+2026-01-20 17:11:46,783 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_5lfallpf
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 17:11:47,061 [INFO] Enabling autodiscover targets
+2026-01-20 17:11:48,959 [INFO] [96m
+2026-01-20 17:11:48,959 [INFO] 2026-01-20 17:11:48 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 17:11:48,960 [INFO] [39m
+2026-01-20 17:12:13,656 [INFO] [96m
+2026-01-20 17:12:13,656 [INFO] 2026-01-20 17:12:13 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 17:12:13,656 [INFO] [39m
+2026-01-20 17:12:18,866 [INFO] [96m
+2026-01-20 17:12:18,866 [INFO] 2026-01-20 17:12:18 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 17:12:18,866 [INFO] [39m
+2026-01-20 17:12:24,051 [INFO] [92m
+2026-01-20 17:12:24,051 [INFO] 2026-01-20 17:12:24 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 17:12:24,051 [INFO] [39m
+2026-01-20 17:12:27,759 [INFO] [96m
+2026-01-20 17:12:27,760 [INFO] 2026-01-20 17:12:27 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 17:12:27,760 [INFO] [39m
+2026-01-20 17:12:33,336 [INFO] [96m
+2026-01-20 17:12:33,337 [INFO] 2026-01-20 17:12:33 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 17:12:33,337 [INFO] [39m
+2026-01-20 17:12:36,943 [INFO] [96m
+2026-01-20 17:12:36,944 [INFO] 2026-01-20 17:12:36 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 17:12:36,944 [INFO] [39m
+2026-01-20 17:12:48,806 [INFO] Encontradas 1127 linhas na segunda tabela.
+2026-01-20 17:12:48,807 [INFO] Encontradas 1127 linhas na página atual.
+2026-01-20 17:19:41,169 [INFO] [96m
+2026-01-20 17:19:41,171 [INFO] 2026-01-20 17:19:41 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 17:19:41,171 [INFO] [39m
+2026-01-20 17:19:45,821 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_eb8iigbx
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 17:19:46,099 [INFO] Enabling autodiscover targets
+2026-01-20 17:19:47,838 [INFO] [96m
+2026-01-20 17:19:47,839 [INFO] 2026-01-20 17:19:47 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 17:19:47,839 [INFO] [39m
+2026-01-20 17:20:22,451 [INFO] [96m
+2026-01-20 17:20:22,452 [INFO] 2026-01-20 17:20:22 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 17:20:22,452 [INFO] [39m
+2026-01-20 17:20:27,661 [INFO] [96m
+2026-01-20 17:20:27,661 [INFO] 2026-01-20 17:20:27 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 17:20:27,662 [INFO] [39m
+2026-01-20 17:20:32,812 [INFO] [92m
+2026-01-20 17:20:32,812 [INFO] 2026-01-20 17:20:32 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 17:20:32,812 [INFO] [39m
+2026-01-20 17:20:36,480 [INFO] [96m
+2026-01-20 17:20:36,481 [INFO] 2026-01-20 17:20:36 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 17:20:36,481 [INFO] [39m
+2026-01-20 17:20:42,033 [INFO] [96m
+2026-01-20 17:20:42,033 [INFO] 2026-01-20 17:20:42 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 17:20:42,034 [INFO] [39m
+2026-01-20 17:20:45,613 [INFO] [96m
+2026-01-20 17:20:45,614 [INFO] 2026-01-20 17:20:45 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 17:20:45,614 [INFO] [39m
+2026-01-20 17:20:56,492 [INFO] Encontradas 1127 linhas na segunda tabela.
+2026-01-20 17:20:56,492 [INFO] Encontradas 1127 linhas na página atual.
+2026-01-20 17:56:49,260 [INFO] [96m
+2026-01-20 17:56:49,263 [INFO] 2026-01-20 17:56:49 ======= LOG ======== > -----------INICIALIZANDO WEBDRIVER-----------
+2026-01-20 17:56:49,263 [INFO] [39m
+2026-01-20 17:56:53,958 [INFO] Starting
+	executable :C:\Program Files\Google\Chrome\Application\chrome.exe
+
+arguments:
+--window-size=1280,840
+	--window-position=20,54
+	--remote-allow-origins=*
+	--no-first-run
+	--no-service-autorun
+	--disable-auto-reload
+	--no-default-browser-check
+	--homepage=about:blank
+	--no-pings
+	--wm-window-animations-disabled
+	--animation-duration-scale=0
+	--enable-privacy-sandbox-ads-apis
+	--safebrowsing-disable-download-protection
+	--simulate-outdated-no-au="Tue, 31 Dec 2099 23:59:59 GMT"
+	--password-store=basic
+	--deny-permission-prompts
+	--disable-infobars
+	--disable-breakpad
+	--disable-prompt-on-repost
+	--disable-password-generation
+	--disable-ipc-flooding-protection
+	--disable-background-timer-throttling
+	--disable-search-engine-choice-screen
+	--disable-backgrounding-occluded-windows
+	--disable-client-side-phishing-detection
+	--disable-top-sites
+	--disable-translate
+	--disable-renderer-backgrounding
+	--disable-background-networking
+	--disable-dev-shm-usage
+	--disable-features=IsolateOrigins,site-per-process,Translate,InsecureDownloadWarnings,DownloadBubble,DownloadBubbleV2,OptimizationTargetPrediction,OptimizationGuideModelDownloading,SidePanelPinning,UserAgentClientHint,PrivacySandboxSettings4
+	--user-data-dir=C:\Users\PAULO~1.SAN\AppData\Local\Temp\uc_xzok5mbe
+	--disable-features=IsolateOrigins,site-per-process
+	--disable-session-crashed-bubble
+	--remote-debugging-host=127.0.0.1
+	--remote-debugging-port=9222
+2026-01-20 17:56:54,231 [INFO] Enabling autodiscover targets
+2026-01-20 17:56:56,031 [INFO] [96m
+2026-01-20 17:56:56,032 [INFO] 2026-01-20 17:56:56 ======= LOG ======== > -----------WEBDRIVER INICIALIZADO-----------
+2026-01-20 17:56:56,032 [INFO] [39m
+2026-01-20 17:56:58,502 [INFO] [96m
+2026-01-20 17:56:58,502 [INFO] 2026-01-20 17:56:58 ======= LOG ======== > -----------BOTÃO DE LOGIN COM CERTIFICADO CLICADO-----------
+2026-01-20 17:56:58,503 [INFO] [39m
+2026-01-20 17:57:26,920 [INFO] [96m
+2026-01-20 17:57:26,921 [INFO] 2026-01-20 17:57:26 ======= LOG ======== > -----------CLICANDO BOTÃO CERTIFICADO-----------
+2026-01-20 17:57:26,921 [INFO] [39m
+2026-01-20 17:57:32,152 [INFO] [92m
+2026-01-20 17:57:32,152 [INFO] 2026-01-20 17:57:32 ======= LOG ======== > -----------LOGIN REALIZADO COM CERTIFICADO-----------
+2026-01-20 17:57:32,152 [INFO] [39m
+2026-01-20 17:57:35,882 [INFO] [96m
+2026-01-20 17:57:35,882 [INFO] 2026-01-20 17:57:35 ======= LOG ======== > -----------CLICANDO NA TABELA RECEBIDAS---------
+2026-01-20 17:57:35,882 [INFO] [39m
+2026-01-20 17:57:41,477 [INFO] [96m
+2026-01-20 17:57:41,478 [INFO] 2026-01-20 17:57:41 ======= LOG ======== > -----------FILTROS DE RECEBIDAS ABERTOS---------
+2026-01-20 17:57:41,478 [INFO] [39m
+2026-01-20 17:57:45,036 [INFO] [96m
+2026-01-20 17:57:45,036 [INFO] 2026-01-20 17:57:45 ======= LOG ======== > -----------CLICANDO EM FILTRAR (RECEBIDAS)---------
+2026-01-20 17:57:45,036 [INFO] [39m
+2026-01-20 17:57:56,300 [INFO] Encontradas 1127 linhas na segunda tabela.
+2026-01-20 17:57:56,301 [INFO] Encontradas 1127 linhas na página atual.
+2026-01-20 17:58:03,411 [INFO] Erro ao processar uma linha: BancoDeDados.salvar_procuracao() missing 1 required positional argument: 'dados'
