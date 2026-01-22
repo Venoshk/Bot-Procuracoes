@@ -93,12 +93,11 @@ class Procuracoes:
             
             linhas = segunda_tabela.find_all('datatable-body-row')
             
-            print(f"Encontradas {len(linhas)} linhas na segunda tabela.")
+            Logs.log_sucess(f"Encontradas {len(linhas)} linhas na segunda tabela.")
         else:
-            print(f"Atenção: Não foi encontrada uma segunda tabela. Total de tabelas: {len(tabelas)}")
+            Logs.log_fail(f"Atenção: Não foi encontrada uma segunda tabela. Total de tabelas: {len(tabelas)}")
             return dados_capturados
         
-        print(f"Encontradas {len(linhas)} linhas na página atual.")
 
         for linha in linhas:
             try:
@@ -135,4 +134,4 @@ class Procuracoes:
             except Exception as e:
                 print(f"Erro ao processar uma linha: {e}")
 
-        return dados_capturados
+        return Logs.log_sucess("As procurações foram salvas com suceeso no banco!")

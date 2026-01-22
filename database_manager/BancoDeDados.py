@@ -56,7 +56,7 @@ class BancoDeDados:
         except Exception as e:
             print(f"[Erro Postgres] Falha ao salvar {dados.get('CNPJ')}: {e}")
             if conexao:
-                conexao.rollback() # Importante no Postgres em caso de erro
+                conexao.rollback()
             
         finally:
             if conexao:

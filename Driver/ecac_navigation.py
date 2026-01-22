@@ -46,6 +46,9 @@ class EcacBaixaAndUpload():
 
             except Exception as e:
                 Logs.log_fail(f"Erro ao extrair JSON: {e}")
+            
+            finally:
+                LoginProcuracao.exitsECACSafely(driver)
 
 
 
