@@ -1,20 +1,22 @@
-from sqlalchemy import create_engine, text
-from datetime import datetime
+import os
 import re
+from datetime import datetime
+import psycopg2  
+
+CONEXAO_BANCO = os.getenv('URL_BANCO')
 
 class BancoDeDados:
+    
     def __init__(self):
-        self.connection_string = r"sqlite:///C:\Users\paulo.santos\backendTax\OperacionalJCPDjango\operacionalTaxall\db.sqlite3"
-        self.engine = create_engine(self.connection_string)
-        
+        self.dsn = CONEXAO_BANCO 
+
     def limpar_cnpj(self, cnpj_sujo):
-        # Remove tudo que não for dígito (pontos, traços, barras)
         return re.sub(r'\D', '', str(cnpj_sujo))
 
     def converter_data(self, data_str):
-        # Converte '31/12/2026' para objeto date do Python
         try:
-            return datetime.strptime(data_str, "%d/%m/%Y").date()
+            dt = datetime.strptime(data_str, "%d/%m/%Y")
+            return dt.strftime("%Y-%m-%d")
         except:
             return None
 
@@ -22,27 +24,40 @@ class BancoDeDados:
         cnpj_limpo = self.limpar_cnpj(dados['CNPJ'])
         data_formatada = self.converter_data(dados['Validade'])
         
-        # --- MUDANÇA 2: Sintaxe SQL do PostgreSQL (ON CONFLICT) ---
-        # "ON CONFLICT (cnpj)" obriga que a coluna 'cnpj' seja chave única (UNIQUE) no banco
-        # "EXCLUDED" refere-se ao valor novo que você tentou inserir
-        sql = text("""
-            INSERT INTO procuracoes_recebidas (razao_social, cnpj, validade, situacao, data_extracao)
-            VALUES (:razao, :cnpj, :validade, :situacao, NOW())
-            ON CONFLICT (cnpj) 
-            DO UPDATE SET
-                validade = EXCLUDED.validade,
-                situacao = EXCLUDED.situacao,
-                data_extracao = NOW();
-        """)
+        conexao = None # Inicializa para evitar o erro no finally
 
         try:
-            with self.engine.begin() as conn: # .begin() gerencia o commit automaticamente
-                conn.execute(sql, {
-                    "razao": dados['Razão Social'],
-                    "cnpj": cnpj_limpo,
-                    "validade": data_formatada,
-                    "situacao": dados['Situação']
-                })
-                print(f"[Postgres] Salvo/Atualizado: {dados['Razão Social']}")
+            # CONEXÃO COM POSTGRES
+            conexao = psycopg2.connect(self.dsn)
+            cursor = conexao.cursor()
+
+
+            sql = """
+                INSERT INTO procuracoes_recebidas 
+                (razao_social, cnpj, validade, situacao, data_extracao)
+                VALUES (%s, %s, %s, %s, CURRENT_TIMESTAMP)
+                ON CONFLICT (cnpj, validade) 
+                DO UPDATE SET
+                    situacao = EXCLUDED.situacao,
+                    data_extracao = CURRENT_TIMESTAMP;
+            """
+            
+            # No psycopg2 usamos %s ao invés de :nome
+            cursor.execute(sql, (
+                dados['Razão Social'],
+                cnpj_limpo,
+                data_formatada,
+                dados['Situação']
+            ))
+            
+            conexao.commit()
+            print(f"[Postgres] Salvo/Atualizado: {dados['Razão Social']}")
+
         except Exception as e:
-            print(f"[Erro Postgres] Falha ao salvar {dados['CNPJ']}: {e}")   
+            print(f"[Erro Postgres] Falha ao salvar {dados.get('CNPJ')}: {e}")
+            if conexao:
+                conexao.rollback() # Importante no Postgres em caso de erro
+            
+        finally:
+            if conexao:
+                conexao.close()

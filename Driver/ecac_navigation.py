@@ -28,7 +28,7 @@ class EcacBaixaAndUpload():
         download_dir = os.path.abspath(os.path.join('downloads/procuracao'))
         os.makedirs(download_dir, exist_ok=True)
 
-        with SB(uc=True, headed=True, headless2=False, incognito=True, external_pdf=True, maximize=True, devtools=True) as sb:
+        with SB(uc=True, headed=True, headless2=False, incognito=True, external_pdf=True, maximize=True) as sb:
 
             driver = LoginProcuracao.initiateWebDriver(sb, download_dir)
 

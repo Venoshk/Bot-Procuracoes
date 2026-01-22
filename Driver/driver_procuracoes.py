@@ -5,10 +5,13 @@ import json
 import sys
 import os
 sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
-from database_manager import BancoDeDados
+from database_manager.BancoDeDados import BancoDeDados
 from bs4 import BeautifulSoup
 
+db_instance = BancoDeDados()
+
 class Procuracoes:
+    
     
     
     @staticmethod
@@ -75,6 +78,7 @@ class Procuracoes:
         except Exception as e:
             Logs.log_fail(f"Erro ao clicar no botao de altera quantidade {e}")
     
+    @staticmethod
     def extrair_dados_da_pagina(driver):
         
         html_content = driver.get_page_source()
@@ -84,49 +88,42 @@ class Procuracoes:
 
         
         if len(tabelas) >= 2:
-            # Seleciona a segunda tabela (índice 1)
             segunda_tabela = tabelas[1]
             
-            # Agora buscamos as linhas APENAS dentro dessa segunda tabela
+            
             linhas = segunda_tabela.find_all('datatable-body-row')
             
             print(f"Encontradas {len(linhas)} linhas na segunda tabela.")
         else:
             print(f"Atenção: Não foi encontrada uma segunda tabela. Total de tabelas: {len(tabelas)}")
-            return dados_capturados # Retorna vazio para não quebrar o código
+            return dados_capturados
         
         print(f"Encontradas {len(linhas)} linhas na página atual.")
 
         for linha in linhas:
             try:
-                # Pega todas as células daquela linha
+                
                 celulas = linha.find_all('datatable-body-cell')
                 
-                # Proteção: Verifica se tem colunas suficientes para evitar erro de índice
                 if len(celulas) < 5:
                     continue
 
-                # --- Extração baseada no seu HTML ---
                 
-                # Coluna 2: Nome da Empresa (índice 1 pois começa em 0)
-                # O HTML mostra: <span title="NOME DA EMPRESA">NOME DA EMPRESA</span>
                 tag_nome = celulas[1].find('span')
                 nome = tag_nome.get('title') if tag_nome else "N/A"
 
-                # Coluna 3: CNPJ
+                
                 tag_cnpj = celulas[2].find('span')
                 cnpj = tag_cnpj.get('title') if tag_cnpj else "N/A"
 
-                # Coluna 4: Data Validade
+                
                 tag_data = celulas[3].find('span')
                 data_validade = tag_data.get('title') if tag_data else "N/A"
 
-                # Coluna 5: Situação (Ativa/Cancelada)
-                # O texto está dentro de <app-tag-situacao> -> <span>
+               
                 tag_situacao = celulas[4].find('app-tag-situacao')
                 situacao = tag_situacao.get_text(strip=True) if tag_situacao else "Desconhecido"
 
-                # Monta o dicionário
                 item = {
                     "Razão Social": nome,
                     "CNPJ": cnpj,
@@ -134,8 +131,7 @@ class Procuracoes:
                     "Situação": situacao
                 }
                 
-                # BancoDeDados.BancoDeDados.salvar_procuracao(item)
-                dados_capturados.append(item)
+                db_instance.salvar_procuracao(item)
             except Exception as e:
                 print(f"Erro ao processar uma linha: {e}")
 

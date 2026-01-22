@@ -72,31 +72,30 @@ class LoginProcuracao():
 
         while max_tries < 5 and not success:
             try:
-                driver.is_text_visible("Serviços do Contribuinte")
-                Logs.log_sucess("-----------LOGIN REALIZADO COM CERTIFICADO-----------")
+                driver.cdp.find_element('//*[@id="botao-nova-autorizacao"]')
+               
+                Logs.log_sucess("-----------LOGIN REALIZADO COM SUCESSO-----------")
                 success = True
-
+                
                 if driver.is_element_visible("//body[@class='neterror']"):
                     raise Exception("Erro de rede detectado após login.")
 
             except Exception as e:
-                
                 max_tries += 1
-                sleep(3) # Espera 15 minutos antes de tentar novamente
+                sleep(3)
                 Logs.log_fail(f"Tentativa {max_tries} - Erro ao verificar login com certificado: {e}")
                 driver.activate_cdp_mode('https://cav.receita.fazenda.gov.br/autenticacao/login')
-                driver.cdp.sleep(random.uniform(3, 5))  # tempo para recarregar
-
+                driver.cdp.sleep(random.uniform(3, 5))
                 try:
                     driver.cdp.click_if_visible('/html/body/div[2]/div/div[2]/div/form/div[2]/p[2]/input')
                     driver.cdp.sleep(random.uniform(3, 5))
                     driver.cdp.click_if_visible('//*[@id="login-certificate"]')
                     driver.cdp.sleep(random.uniform(10, 12))
                     #yesCaptchaHandler(driver)
-                   
                 except Exception as inner_e:
-                    Logs.log_fail(f"Erro ao tentar refazer login: {inner_e}")
+                        Logs.log_fail(f"Erro ao tentar refazer login: {inner_e}")
+                    
 
         if not success:
-            raise Exception("Falha ao realizar login após 5 tentativas.")
+            raise Exception("Falha crítica: Não foi possível realizar o login após 5 tentativas.")
     
