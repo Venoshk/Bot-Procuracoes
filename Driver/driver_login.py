@@ -64,7 +64,7 @@ class LoginProcuracao():
         Logs.log_step("-----------CLICANDO BOTÃO CERTIFICADO-----------")
         driver.cdp.sleep(random.uniform(2,3))
 
-        yesCaptchaHandler(driver)
+        # yesCaptchaHandler(driver)
         driver.cdp.sleep(random.uniform(2,3))
 
         max_tries = 0
@@ -91,7 +91,7 @@ class LoginProcuracao():
                     driver.cdp.sleep(random.uniform(3, 5))
                     driver.cdp.click_if_visible('//*[@id="login-certificate"]')
                     driver.cdp.sleep(random.uniform(10, 12))
-                    yesCaptchaHandler(driver)
+                    # yesCaptchaHandler(driver)
                 except Exception as inner_e:
                         Logs.log_fail(f"Erro ao tentar refazer login: {inner_e}")
                     
