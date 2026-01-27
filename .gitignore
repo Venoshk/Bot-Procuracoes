@@ -1,0 +1,30 @@
+# Ambientes virtuais
+.venv
+venv
+env
+ENV
+
+# Cache e arquivos compilados
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+
+# IDEs
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Logs
+logs/
+*.log
+
+# Banco de dados
+*.db
+*.sqlite3
+
+# Dependências
+.env
+.env.local
