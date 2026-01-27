@@ -188,8 +188,6 @@ python scripts/crawler_ecac.py
 
 ---
 
-Made with 💙 by **TaxHub Team**
-
 ```
 
 ```
