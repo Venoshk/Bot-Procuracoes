@@ -40,7 +40,7 @@ class EcacBaixaAndUpload():
                  LoginProcuracao.loginECAC(driver)
 
             try:
-                Procuracoes.tabelaRecebidas(driver)
+                Procuracoes.tabelaRecebidas(driver, download_dir)
 
                 time.sleep(10)
 
