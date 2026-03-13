@@ -195,5 +195,3 @@ python manage.py importar_procuracoes
 </details>
 
 ---
-
-*Made with 💙 by **TaxHub Team***
