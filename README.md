@@ -124,7 +124,7 @@ sql = """
     ON CONFLICT (cnpj, validade) 
     DO UPDATE SET
         situacao = EXCLUDED.situacao,      -- Atualiza se o status mudou (ex: Cancelou)
-        data_extracao = CURRENT_TIMESTAMP; -- Marca que conferimos hoje
+        data_extracao = CURRENT_TIMESTAMP;
 """
 
 ```
@@ -187,8 +187,6 @@ python scripts/crawler_ecac.py
 </details>
 
 ---
-
-Made with 💙 by **TaxHub Team**
 
 ```
 
