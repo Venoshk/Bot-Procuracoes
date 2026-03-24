@@ -180,11 +180,14 @@ class Procuracoes:
     def auditar_poderes(texto_completo_documento, lista_linhas_extraidas, checklist_alvo):
         texto_minusculo = texto_completo_documento.lower()
         
+        # Verifica se é uma procuração que dá poderes totais
         if "todos os serviços existentes e os que vierem a permitir autorização" in texto_minusculo or \
            "todos os serviços existentes e os que vierem a ser disponibilizados" in texto_minusculo:
             return "Todos os poderes confere (Procuração Ampla)"
 
         poderes_encontrados_normalizados = []
+        
+        # Agora sim ele sabe quem é a lista_linhas_extraidas!
         for linha in lista_linhas_extraidas:
             if linha and linha[0].isdigit():
                 partes = linha.split(".", 1)
@@ -448,69 +451,88 @@ class Procuracoes:
                         linhas_uteis.append(linha)
 
             # === Passando o checklist certo pra auditoria ===
-            return Procuracoes.auditar_poderes(texto_completo, linhas_uteis, checklist_alvo)
+            resultado_auditoria = Procuracoes.auditar_poderes(texto_completo, linhas_uteis, checklist_alvo)
+            return resultado_auditoria
+            
             
         except Exception as e:
             return f"Erro ao ler PDF e auditar: {e}"
         
+ 
     @staticmethod
     def validar_modal(sb, checklist_alvo):
         modal_selector = "app-modal-visualizar"
-        seletor_corpo = "div.modal-body dl" 
         botao_fechar = "#botao-superior-fechar"
 
+        # Se o modal estiver visível na tela, começamos a ler
         if sb.is_element_visible(modal_selector):
-            Logs.log_step("--- Modal detectado. Extraindo informações para auditoria... ---")
+            Logs.log_step("--- Modal detectado. Lendo o HTML com BeautifulSoup... ---")
+            
+            resultado_auditoria = None 
             
             try:
+                # Espera 1 segundo para o texto aparecer completamente na tela
                 sleep(1) 
                 
-                # Pega o HTML do modal para usar o BeautifulSoup e não perder as quebras de linha
-                html_modal = sb.get_attribute(seletor_corpo, "outerHTML")
+                # Pegamos todo o código HTML (igual a esse que você me mandou)
+                html_modal = sb.get_attribute(modal_selector, "innerHTML")
+                
+                # Entregamos o HTML para a ferramenta BeautifulSoup ler
                 soup = BeautifulSoup(html_modal, 'html.parser')
                 
-                # Extrai o texto preservando as quebras de linha com \n
-                texto_completo = soup.get_text(separator="\n")
+                # Pega todo o texto para verificar depois se é uma procuração "Ampla"
+                texto_completo = soup.get_text(" ").lower()
                 
                 linhas_uteis = []
-                termo = "Serviços Autorizados"
                 
-                if termo.lower() in texto_completo.lower():
-                    indice_inicio = texto_completo.lower().find(termo.lower()) + len(termo)
-                    conteudo = texto_completo[indice_inicio:]
+                # Aqui está a mágica: Mandamos o Python procurar a lista exata!
+                lista_sistemas = soup.find('ol', class_='lista-sistemas')
+                
+                if lista_sistemas:
+                    # Se ele achou a lista, pega todos os itens (<li>) dentro dela
+                    itens = lista_sistemas.find_all('li')
+                    
+                    for item in itens:
+                        # O nome do serviço que queremos está no primeiro <span>
+                        span_servico = item.find('span')
+                        if span_servico:
+                            # Pega só o texto limpo, sem o HTML, e guarda na nossa lista útil
+                            nome_limpo = span_servico.get_text(strip=True)
+                            linhas_uteis.append(nome_limpo)
                 else:
-                    conteudo = texto_completo
-                
-                for linha in conteudo.split('\n'):
-                    linha = linha.strip()
-                    if not linha: continue
-                    
-                    # Critério de parada na assinatura/rodapé
-                    if " de 20" in linha and any(mes in linha for mes in ["Janeiro", "Fevereiro", "Março", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"]):
-                        break
-                    
-                    
-                    if len(linha) > 3: 
-                        linhas_uteis.append(linha)
+                    # Se por acaso o e-CAC mudar o HTML e não tiver a tag <ol>, temos um plano B de emergência
+                    for linha in soup.get_text(separator="\n").split('\n'):
+                        linha = linha.strip()
+                        if len(linha) > 3: 
+                            linhas_uteis.append(linha)
 
-                # Fecha o modal suavemente
+                # Mandamos a nossa lista de poderes limpinha para o robô auditar
+                resultado_auditoria = Procuracoes.auditar_poderes(texto_completo, linhas_uteis, checklist_alvo)
+                
+            except Exception as e_extract:
+                Logs.log_fail(f"Erro na hora de ler o HTML do modal: {e_extract}")
+
+
+            # ==========================================
+            # PASSO 2: FECHAR A JANELINHA DO MODAL
+            # ==========================================
+            try:
                 sb.js_click(botao_fechar)
-                sb.wait_for_element_not_visible(modal_selector, timeout=10)
-                
-                # === A MÁGICA AQUI: Passa o texto do modal para o nosso auditor! ===
-                return Procuracoes.auditar_poderes(texto_completo, linhas_uteis, checklist_alvo)
-                
-            except Exception as e:
-                Logs.log_fail(f"Erro ao extrair/auditar dados do modal: {e}")
-                
-                # Plano B: Força bruta para fechar o modal e não travar o robô
+                sb.wait_for_element_not_visible(modal_selector, timeout=5) 
+            except Exception as e_close:
+                Logs.log_fail(f"Aviso: O site demorou para fechar o modal: {e_close}")
+                # Se o botão falhar, usamos um código forçado para apagar a janela da tela
                 try:
-                    Logs.log_step("Tentando forçar o fechamento do modal via JavaScript...")
                     sb.execute_script(f"var modal = document.querySelector('{modal_selector}'); if(modal) modal.remove();")
                     sb.execute_script("var backdrop = document.querySelector('.modal-backdrop'); if(backdrop) backdrop.remove();")
                     sleep(1)
                 except Exception as e_force:
-                    print(f"Não foi possível remover o modal à força: {e_force}")
+                    print(f"Não consegui fechar a janela à força: {e_force}")
+
+            # ==========================================
+            # PASSO 3: ENTREGAR O RESULTADO
+            # ==========================================
+            return resultado_auditoria
                 
         return None
     
