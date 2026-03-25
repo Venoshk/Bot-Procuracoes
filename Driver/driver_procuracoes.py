@@ -18,124 +18,18 @@ sys.path.insert(0, os.path.abspath(os.path.join(os.path.dirname(__file__), '..')
 db_instance = BancoDeDados()
 
 class Procuracoes:
-    
-    # === 1. CHECKLIST: APENAS LUCRO PRESUMIDO / REAL ===
-    CHECKLIST_LP_LR = [
-        "e-AssinaRFB", "eSocial - Download", "eSocial - Grupo Acesso WEB", "eSocial - Grupo Desligamento", 
-        "eSocial - Grupo Especial", "eSocial - Grupo Preliminar", "eSocial - Grupo Rotinas", "eSocial - Grupo SST", 
-        "eSocial - Processo Trabalhista", "Acessar o sistema DCTFWeb", "Acessar o Programa Especial de Regularização Tributária - PERT",
-        "Acessar Programa Especial de Regularização Tributária - PERT - Débito Previdenciário", "Acessar PER/DCOMP WEB",
-        "Aplicações PGFN - Parcelamento Simplificado", "Aplicações PGFN - Requerimento para exclusão da Lista de Devedores",
-        "Assinatura da Escrituração Fiscal Digital - EFD ICMS IPI", "Atualização de Dados Bancários p/ Restituição e Ressarcimento",
-        "Cadastro CNPJ - Consulta Situação do Pedido", "Caixa Postal - Mensagens", "Caixa Postal - Termo de Opção pelo Domicilio Tributário Eletrônico",
-        "Compensação a pedido do Simples Nacional", "Comunicação para Compensação de Oficio", "Consulta Pendências - Inclusão no Cadin/Sisbacen pela RFB",
-        "CHATRFB-Todos os serviços disponiveis no canal de atendimento", "Cópia de Declaração", "Declarações - DCTF (Acesso ao conteúdo da declaração, extrato e 2a via do recibo)",
-        "Declarações - DIRF (Acesso ao conteúdo da declaração, extrato e 2a via do recibo)", "Desistência de Parcelamentos Anteriores",
-        "Download da Escrituração Contábil Digital (SPED-ECD) utilizando o Receitanet Bx", "Download da Escrituração Fiscal Digital (SPED-EFD) utilizando o Receitanet Bx",
-        "Download de EFD-PIS/Cofins através do ReceitaNetBX", "Emissão de DAS Avulso", "Entregar Arquivo de Dados - Obrigação Acessória",
-        "Extrato Malha Fiscal Pessoa Juridica", "EFD-Reinf - Geral", "Intimação DCTF", "Isenções e Regimes Especiais", 
-        "Notificações e Autos relativos  entrega de declarações", "Notificações em Auditoria de Compensação em GFIP", "Pagamento e Parcelamento Lei nº 12.996/2014",
-        "Pagamentos - Comprovante de Arrecadação", "Pagamentos - Retificação de Documento de Arrecadação - Redarf Net",
-        "Parcelamento - Solicitar e acompanhar", "Parcelamento de Débitos", "Parcelamento Simplificado Previdenciário", 
-        "Parcelamento Simplificado Previdenciário DAU", "Pedido Eletrônico de Restituição (Simples e Simei)", "Processos Digitais e Requerimentos Web",
-        "Programa de Regularização Tributária-Demais Débitos", "PER/DCOMP- Consulta Despacho Decisório", "PGF - Consulta Débitos inscritos a partir de 01/11/2012",
-        "PGFN - Consulta Débitos inscritos a partir de 01/11/2012", "Retificação de GPS.", "Sief Cobrança - Intimações DCTF",
-        "Sistema de Ajuste de Documentos de Arrecadação - SISTAD", "Situação Fiscal do Contribuinte", "Solicitar, acompanhar e emitir DAS de parcelamento",
-        "SPED ECD - Central de Balanços.", "SPED-ECF (Escrituração Contábil Fiscal)", "Transmissão de Declarações/Arquivos, inclusive todos do CNPJ, com Assinatura Digital via Receitanet"
-    ]
-
-    # === 2. CHECKLIST: SIMPLES NACIONAL ===
-    CHECKLIST_SN = [
-        "eSocial - Download", "eSocial - Grupo Acesso WEB", "eSocial - Grupo Desligamento", "eSocial - Grupo Especial", 
-        "eSocial - Grupo Preliminar", "eSocial - Grupo Rotinas", "eSocial - Grupo SST", "Acessar o sistema DCTFWeb",
-        "Acessar o Programa Especial de Regularização Tributária - PERT", "Acessar Programa Especial de Regularização Tributária - PERT Débito Previdenciário",
-        "Acessar PER/DCOMP WEB", "Aplicações PGFN - Parcelamento Simplificado", "Aplicações PGFN - Requerimento para exclusão da Lista de Devedores",
-        "Assinatura da Escrituração Fiscal Digital EFD ICMS IPI", "Atualização de Dados Bancários p/ Restituição e Ressarcimento",
-        "Cadastro CNPJ - Consulta Situação do Pedido", "Caixa Postal Mensagens", "Caixa Postal Termo de Opção pelo Domicilio Tributário Eletrônico",
-        "Compensação a pedido do Simples Nacional", "Comunicação para Compensação de Oficio", "Consulta Ação Fiscal do Simples Nacional",
-        "Consulta Pendências - Inclusão no Cadin/Sisbacen pela RFB", "Contribuinte Diferenciado e-MAC (Sistema de Comunicação Eletrônica)",
-        "Contribuinte Diferenciado - Consulta Participação no Acompanhamento Diferenciado", "Contribuinte Diferenciado Pessoas de Contato",
-        "CHATRFB-Todos os serviços disponíveis no canal de atendimento", "Cópia de Declaração", "Declarações - DCTF", "Declarações - DIRF",
-        "Desistência de Parcelamentos Anteriores", "Download da Escrituração Contábil Digital (SPED-ECD)", "Download da Escrituração Fiscal Digital (SPED-EFD)",
-        "Download de EFD-PIS/Cofins", "Download dos arquivos SPED Dados Agregados", "Emissão de DAS Avulso", "Entregar Arquivo de Dados Obrigação Acessória",
-        "Extrato Malha Fiscal Pessoa Jurídica", "EFD-Reinf - Geral", "Isenções e Regimes Especiais", "Notificações e Autos relativos  entrega de declarações",
-        "Notificações em Auditoria de Compensação em GFIP", "Paex Lei 13.988", "Pagamento e Parcelamento Lei nº 12.996/2014",
-        "Pagamentos Retificação de Documento de Arrecadação - Redarf Net", "Parcelamento - Solicitar e acompanhar", "Parcelamento de Débitos",
-        "Parcelamento de Débitos do Simples Nacional", "Parcelamento Especial Opções da Lei 11.941/2009", "Parcelamento Especial Simples Nacional",
-        "Parcelamento Simplificado Previdenciário", "Parcelamento Simplificado Previdenciário DAU", "Parcelar dívidas do SN pela LC 193/2022 (RELP)",
-        "Pedido Eletrônico de Restituição (Simples e Simei)", "Piloto da CBS na Reforma Tributária sobre o Consumo", "Processos Digitais e Requerimentos Web",
-        "Programa de Regularização Tributária-Demais Débitos", "Programa Especial de Regularização Tributária - PERT-MEI", "PER/DCOMP- Consulta Despacho Decisório",
-        "PER/DCOMP-Consulta Intimação", "PER/DCOMP-Consulta Processamento", "PGDAS-D a partir de 01/2018", "PGF Consulta Débitos",
-        "PGFN- Consulta Débitos", "Retificação de GPS", "Sief Cobrança Intimações DCTF", "Simples Nacional - Acompanhamento Opção",
-        "Simples Nacional Agendamento de Opção", "Simples Nacional Alerta Avisos", "Simples Nacional Consulta Débitos Sivex",
-        "Simples Nacional Consulta Declaração Transmitida", "Simples Nacional - Emissão de DAS de Auto de Infração",
-        "Sistema de Ajuste de Documentos de Arrecadação SISTAD", "Situação Fiscal do Contribuinte", "Solicitar, acompanhar e emitir DAS de parcelamento",
-        "SPED ECD Central de Balanços", "Transmissão de Declarações/Arquivos"
-    ]
-
-    # === 3. CHECKLIST: MISTO (LP/LR que foi SN nos últimos 5 anos) ===
-    CHECKLIST_MISTO = [
-        "eSocial - Download", "eSocial - Grupo Acesso WEB", "eSocial - Grupo Desligamento", 
-        "eSocial - Grupo Especial", "eSocial - Grupo Preliminar", "eSocial - Grupo Rotinas", 
-        "eSocial - Grupo SST", "eSocial - Processo Trabalhista", "Acessar o sistema DCTFWeb", 
-        "Acessar o Programa Especial de Regularização Tributária - PERT", 
-        "Acessar Programa Especial de Regularização Tributária - PERT - Débito Previdenciário", 
-        "Acessar PER/DCOMP WEB", "Aplicações PGFN - Parcelamento Simplificado", 
-        "Aplicações PGFN - Requerimento para exclusão da Lista de Devedores", 
-        "Assinatura da Escrituração Fiscal Digital - EFD ICMS IPI", 
-        "Atualização de Dados Bancários p/ Restituição e Ressarcimento", 
-        "Cadastro CNPJ - Consulta Situação do Pedido", "Caixa Postal - Mensagens", 
-        "Caixa Postal - Termo de Opção pelo Domicilio Tributário Eletrônico", 
-        "Compensação a pedido do Simples Nacional", "Comunicação para Compensação de Oficio", 
-        "Consulta Ação Fiscal do Simples Nacional", "Consulta Pendências - Inclusão no Cadin/Sisbacen pela RFB", 
-        "CHATRFB-Todos os serviços disponiveis no canal de atendimento", "Cópia de Declaração", 
-        "Declarações - DCTF", "Declarações - DIRF", "Desistência de Parcelamentos Anteriores", 
-        "Download da Escrituração Contábil Digital (SPED-ECD)", "Download da Escrituração Fiscal Digital (SPED-EFD)", 
-        "Download de EFD-PIS/Cofins através do ReceitaNetBX", "Emissão de DAS Avulso", 
-        "Entregar Arquivo de Dados - Obrigação Acessória", "Extrato Malha Fiscal Pessoa Juridica", 
-        "EFD-Reinf - Geral", "Intimação DCTF", "Isenções e Regimes Especiais", 
-        "Notificações e Autos relativos  entrega de declarações", "Notificações em Auditoria de Compensação em GFIP", 
-        "Pagamento e Parcelamento Lei nº 12.996/2014", "Pagamentos - Comprovante de Arrecadação", 
-        "Pagamentos - Retificação de Documento de Arrecadação - Redarf Net", 
-        "Parcelamento - Solicitar e acompanhar", "Parcelamento de Débitos", 
-        "Parcelamento de Débitos do Simples Nacional", "Parcelamento Especial - Opções da Lei 11.941/2009", 
-        "Parcelamento Especial Simples Nacional", "Parcelamento Simplificado Previdenciário", 
-        "Parcelamento Simplificado Previdenciário DAU", "Parcelar dívidas do SN pela LC 193/2022 (RELP)", 
-        "Pedido Eletrônico de Restituição (Simples e Simei)", "Piloto de CBS na Reforma Tributária sobre o Consumo", 
-        "Processos Digitais e Requerimentos Web", "Programa de Regularização Tributária-Débitos Previdenciários", 
-        "Programa de Regularização Tributária-Demais Débitos", "Programa Especial Regularização Tributária - PERT-SN", 
-        "PER/DCOMP- Consulta Análise Preliminar/Autorregularização", "PER/DCOMP- Consulta Despacho Decisório", 
-        "PER/DCOMP- Consulta Intimação", "PER/DCOMP- Consulta Processamento", "PGDAS-D- a partir de 01/2018", 
-        "PGF - Consulta Débitos inscritos a partir de 01/11/2012", "PGFN - Consulta Débitos inscritos a partir de 01/11/2012", 
-        "Retificação de GPS.", "Sief Cobrança - Intimações DCTF", "Simples Nacional - Acompanhamento Opção", 
-        "Simples Nacional - Agendamento de Opção", "Simples Nacional - Alerta - Avisos e comunicações para o contribuinte", 
-        "Simples Nacional - Consulta Débitos Sivex", "Simples Nacional - Consulta Declaração Transmitida", 
-        "Sistema de Ajuste de Documentos de Arrecadação - SISTAD", "Situação Fiscal do Contribuinte", 
-        "Solicitar, acompanhar e emitir DAS de parcelamento", "SPED ECD - Central de Balanços.", 
-        "SPED-ECF (Escrituração Contábil Fiscal)", "SPED-ECF-Download - Download via ReceitanetBX", 
-        "Transmissão de Declarações/Arquivos, inclusive todos do CNPJ"
-    ]
-
-    @staticmethod
-    def _normalizar_texto(texto):
-        texto = str(texto).lower().strip()
-        # Remove acentuação
-        texto = ''.join(c for c in unicodedata.normalize('NFD', texto) if unicodedata.category(c) != 'Mn')
-        return texto
 
     @staticmethod
     def consultar_regime_tributario(cnpj):
         """
         Verifica via Brasil API se a empresa é SN, LP/LR, ou se foi SN nos últimos 5 anos.
+        Retorna o nome do regime.
         """
         cnpj_limpo = re.sub(r'\D', '', cnpj)
-        
         url = f"https://brasilapi.com.br/api/cnpj/v1/{cnpj_limpo}"
-           
 
         for tentativa in range(3):
             try:
-            
                 resposta = requests.get(url, timeout=10)
                 
                 if resposta.status_code == 200:
@@ -144,16 +38,15 @@ class Procuracoes:
                     data_exclusao = dados.get('data_exclusao_do_simples')
 
                     if eh_simples:
-                        return "SIMPLES NACIONAL", Procuracoes.CHECKLIST_SN
+                        return "SIMPLES NACIONAL"
                     
                     if data_exclusao:
                         ano_exclusao = int(data_exclusao[:4])
                         ano_atual = datetime.now().year
                         if (ano_atual - ano_exclusao) <= 5:
-                            return "MISTO", Procuracoes.CHECKLIST_MISTO
+                            return "MISTO"
                     
-                    return "LUCRO PRESUMIDO/REAL", Procuracoes.CHECKLIST_LP_LR
-                
+                    return "LUCRO PRESUMIDO/REAL"
                 
                 elif resposta.status_code == 429:
                     Logs.log_step(f" API sobrecarregada. Respirando antes da tentativa {tentativa + 2}...")
@@ -161,9 +54,8 @@ class Procuracoes:
                     continue
                     
                 else:
-                    
                     Logs.log_fail(f"API retornou status {resposta.status_code} para {cnpj}.")
-                    return "FALHA NA API ou CNPJ INVÁLIDO", Procuracoes.CHECKLIST_MISTO
+                    return "FALHA NA API ou CNPJ INVÁLIDO"
                     
             except requests.exceptions.Timeout:
                 Logs.log_fail(f" API demorou muito para responder (Tentativa {tentativa + 1}/3) para {cnpj}.")
@@ -174,10 +66,10 @@ class Procuracoes:
                 sleep(2)
                 
         Logs.log_fail(f"Desistindo do CNPJ {cnpj} após 3 tentativas. Usando Fallback MISTO.")
-        return "ERRO API (Fallback para Misto)", Procuracoes.CHECKLIST_MISTO
+        return "ERRO API (Fallback para Misto)"
 
     @staticmethod
-    def auditar_poderes(texto_completo_documento, lista_linhas_extraidas, checklist_alvo):
+    def auditar_poderes(texto_completo_documento, codigos_encontrados, checklist_alvo_codigos):
         texto_minusculo = texto_completo_documento.lower()
         
         # Verifica se é uma procuração que dá poderes totais
@@ -185,28 +77,17 @@ class Procuracoes:
            "todos os serviços existentes e os que vierem a ser disponibilizados" in texto_minusculo:
             return "Todos os poderes confere (Procuração Ampla)"
 
-        poderes_encontrados_normalizados = []
-        
-        # Agora sim ele sabe quem é a lista_linhas_extraidas!
-        for linha in lista_linhas_extraidas:
-            if linha and linha[0].isdigit():
-                partes = linha.split(".", 1)
-                if len(partes) > 1:
-                    linha = partes[1]
-            poderes_encontrados_normalizados.append(Procuracoes._normalizar_texto(linha))
-
         poderes_faltantes = []
-        for poder_esperado in checklist_alvo:
-            esperado_norm = Procuracoes._normalizar_texto(poder_esperado)
-            encontrado = any(esperado_norm in poder_encontrado for poder_encontrado in poderes_encontrados_normalizados)
-            
-            if not encontrado:
-                poderes_faltantes.append(poder_esperado)
+        
+        # Como as duas listas agora são números limpos ('00132'), a comparação é direta
+        for codigo_esperado in checklist_alvo_codigos:
+            if codigo_esperado not in codigos_encontrados:
+                poderes_faltantes.append(codigo_esperado)
 
         if not poderes_faltantes:
             return "Todos os poderes confere"
         else:
-            return f"Faltam {len(poderes_faltantes)} poderes: " + " | ".join(poderes_faltantes)
+            return f"Faltam {len(poderes_faltantes)} códigos: " + " | ".join(poderes_faltantes)
 
     @staticmethod
     def montar_item(nome, cnpj, data_validade, situacao, poderes, regime_detectado="N/A")-> dict:
@@ -321,11 +202,11 @@ class Procuracoes:
                     Logs.log_step(f"Procuração de {cnpj} com validade {data_validade} já processada. Pulando.")
                     contador_pulos_consecutivos += 1
                     if contador_pulos_consecutivos >= 10:
-                        Logs.log_sucess("Pulei 10 procuracoes consecutivas. Provavelmente cheguei em um ponto já processado. Encerrando para evitar bloqueio.")
+                        Logs.log_sucess("Pulei 10 procuracoes consecutivas. Encerrando para evitar bloqueio.")
                         break
                     continue
 
-                # === Bate na API para definir qual é a lista correta para este CNPJ ===
+                # Pega o regime da API ou Banco e a lista de códigos alvo
                 nome_regime, checklist_correto = Procuracoes.obter_regime_e_checklist(cnpj)
                 Logs.log_step(f"Regime detectado para {cnpj}: {nome_regime}")
 
@@ -342,33 +223,28 @@ class Procuracoes:
                             driver.scroll_to(xpath_dinamico, by="xpath")
                             driver.js_click(xpath_dinamico, by="xpath")
 
-                            # Repassando a lista certa caso o Modal consiga ler
                             dados_modal = Procuracoes.validar_modal(driver, checklist_correto)
                             if dados_modal:
                                 classificacao_poder = dados_modal
                             else:
                                 arquivo = Procuracoes.aguardar_download(timeout=15, download_dir=download_dir)
                                 if arquivo:
-                                    # === Correção 1: Passando o checklist_correto aqui ===
                                     classificacao_poder = Procuracoes.ler_poderes_do_pdf(arquivo, checklist_correto)
 
                         if classificacao_poder:
-                            # === Correção 2: Adicionando o regime no salvar_procuracao ===
-                            item = Procuracoes.montar_item(nome, cnpj, data_validade, situacao, classificacao_poder, nome_regime)
+                            break 
                             
-                            db_instance.salvar_procuracao(item)
-                            Logs.log_sucess(f"Sucesso: {cnpj} processado ({'Modal' if 'Modal' in classificacao_poder else 'PDF'})")
-                            Logs.log_sucess(f"Processando linha {count}/{len(linhas)}: {cnpj}")
-                            break # Sai do loop de tentativas
-                            
-                        else:
-                            if tentativa == 1: # Última tentativa falhou
-                                Logs.log_fail(f"Falha total ao processar {cnpj}")
-                                cnpjs_com_erro.append({"cnpj": cnpj, "erro": "Timeout Modal/Download", "data": str(datetime.now())})
-                                
                     except Exception as e_click:
                         Logs.log_fail(f"Erro na tentativa {tentativa + 1} para {cnpj}: {e_click}")
                         sleep(2)
+
+                if not classificacao_poder:
+                    classificacao_poder = "ERRO NA EXTRAÇÃO (Modal/PDF falhou)"
+                    cnpjs_com_erro.append({"cnpj": cnpj, "erro": "Falha na extração", "data": str(datetime.now())})
+
+                item = Procuracoes.montar_item(nome, cnpj, data_validade, situacao, classificacao_poder, nome_regime)
+                db_instance.salvar_procuracao(item)
+                Logs.log_sucess(f"Processando linha {count}/{len(linhas)} concluída: {cnpj} salvo!")
 
             except Exception as e:
                 print(f"Erro crítico na linha {i}: {e}")
@@ -423,9 +299,8 @@ class Procuracoes:
         
         return None
 
-    # === Correção 3: Recebendo a variável checklist_alvo ===
     @staticmethod
-    def ler_poderes_do_pdf(caminho_pdf, checklist_alvo):
+    def ler_poderes_do_pdf(caminho_pdf, checklist_alvo_codigos):
         try:
             texto_completo = ""
             with open(caminho_pdf, 'rb') as arquivo:
@@ -435,93 +310,69 @@ class Procuracoes:
                     if texto_extraido:
                         texto_completo += texto_extraido + "\n"
             
-            linhas_uteis = []
-            termo = "Serviços Autorizados"
-            if termo.lower() in texto_completo.lower():
-                indice_inicio = texto_completo.lower().find(termo.lower()) + len(termo)
-                conteudo = texto_completo[indice_inicio:]
-                
-                for linha in conteudo.split('\n'):
-                    linha = linha.strip()
-                    if not linha: continue
-                    if " de 20" in linha and ("Janeiro" in linha or "Fevereiro" in linha or "Março" in linha or "Abril" in linha or "Maio" in linha or "Junho" in linha or "Julho" in linha or "Agosto" in linha or "Setembro" in linha or "Outubro" in linha or "Novembro" in linha or "Dezembro" in linha):
-                        break
-                    
-                    if linha and linha[0].isdigit():
-                        linhas_uteis.append(linha)
-
-            # === Passando o checklist certo pra auditoria ===
-            resultado_auditoria = Procuracoes.auditar_poderes(texto_completo, linhas_uteis, checklist_alvo)
-            return resultado_auditoria
+            codigos_encontrados = []
             
+            # Tenta achar códigos no formato "Cód.12345" ou "Cód. 12345" dentro do PDF
+            padrao = r'Cód\.\s*(\d+)'
+            matches = re.findall(padrao, texto_completo)
+            if matches:
+                codigos_encontrados.extend(matches)
+                
+            # Se a procuração for ampla, a gente sinaliza pro auditor
+            if "todos os serviços existentes" in texto_completo.lower():
+                codigos_encontrados.append("AMPLA")
+
+            resultado_auditoria = Procuracoes.auditar_poderes(texto_completo, codigos_encontrados, checklist_alvo_codigos)
+            return resultado_auditoria
             
         except Exception as e:
             return f"Erro ao ler PDF e auditar: {e}"
         
- 
     @staticmethod
-    def validar_modal(sb, checklist_alvo):
+    def validar_modal(sb, checklist_alvo_codigos):
         modal_selector = "app-modal-visualizar"
         botao_fechar = "#botao-superior-fechar"
 
-        # Se o modal estiver visível na tela, começamos a ler
         if sb.is_element_visible(modal_selector):
-            Logs.log_step("--- Modal detectado. Lendo o HTML com BeautifulSoup... ---")
+            Logs.log_step("--- Modal detectado. Extraindo códigos... ---")
             
             resultado_auditoria = None 
             
             try:
-                # Espera 1 segundo para o texto aparecer completamente na tela
                 sleep(1) 
                 
-                # Pegamos todo o código HTML (igual a esse que você me mandou)
                 html_modal = sb.get_attribute(modal_selector, "innerHTML")
-                
-                # Entregamos o HTML para a ferramenta BeautifulSoup ler
                 soup = BeautifulSoup(html_modal, 'html.parser')
-                
-                # Pega todo o texto para verificar depois se é uma procuração "Ampla"
                 texto_completo = soup.get_text(" ").lower()
                 
-                linhas_uteis = []
+                codigos_extraidos = [] 
                 
-                # Aqui está a mágica: Mandamos o Python procurar a lista exata!
                 lista_sistemas = soup.find('ol', class_='lista-sistemas')
                 
                 if lista_sistemas:
-                    # Se ele achou a lista, pega todos os itens (<li>) dentro dela
                     itens = lista_sistemas.find_all('li')
-                    
                     for item in itens:
-                        # O nome do serviço que queremos está no primeiro <span>
-                        span_servico = item.find('span')
-                        if span_servico:
-                            # Pega só o texto limpo, sem o HTML, e guarda na nossa lista útil
-                            nome_limpo = span_servico.get_text(strip=True)
-                            linhas_uteis.append(nome_limpo)
-                else:
-                    # Se por acaso o e-CAC mudar o HTML e não tiver a tag <ol>, temos um plano B de emergência
-                    for linha in soup.get_text(separator="\n").split('\n'):
-                        linha = linha.strip()
-                        if len(linha) > 3: 
-                            linhas_uteis.append(linha)
+                        span_codigo = item.find('span', class_='hint-codigo-sistema')
+                        if span_codigo:
+                            texto_codigo = span_codigo.get_text(strip=True)
+                            match = re.search(r'\d+', texto_codigo)
+                            if match:
+                                numero_limpo = match.group(0)
+                                codigos_extraidos.append(numero_limpo)
+                
+                if "todos os serviços existentes" in texto_completo:
+                    codigos_extraidos.append("AMPLA")
 
-                # Mandamos a nossa lista de poderes limpinha para o robô auditar
-                resultado_auditoria = Procuracoes.auditar_poderes(texto_completo, linhas_uteis, checklist_alvo)
+                resultado_auditoria = Procuracoes.auditar_poderes(texto_completo, codigos_extraidos, checklist_alvo_codigos)
                 
             except Exception as e_extract:
-                Logs.log_fail(f"Erro na hora de ler o HTML do modal: {e_extract}")
+                Logs.log_fail(f"Erro na hora de ler os códigos do modal: {e_extract}")
 
-
-            # ==========================================
-            # PASSO 2: FECHAR A JANELINHA DO MODAL
-            # ==========================================
             try:
                 sb.js_click(botao_fechar)
                 sb.wait_for_element_not_visible(modal_selector, timeout=5) 
             except Exception as e_close:
                 Logs.log_fail(f"Aviso: O site demorou para fechar o modal: {e_close}")
-                # Se o botão falhar, usamos um código forçado para apagar a janela da tela
                 try:
                     sb.execute_script(f"var modal = document.querySelector('{modal_selector}'); if(modal) modal.remove();")
                     sb.execute_script("var backdrop = document.querySelector('.modal-backdrop'); if(backdrop) backdrop.remove();")
@@ -529,36 +380,25 @@ class Procuracoes:
                 except Exception as e_force:
                     print(f"Não consegui fechar a janela à força: {e_force}")
 
-            # ==========================================
-            # PASSO 3: ENTREGAR O RESULTADO
-            # ==========================================
             return resultado_auditoria
                 
         return None
     
     @staticmethod
     def obter_regime_e_checklist(cnpj):
-        # 1. BATE NA API PRIMEIRO! (Se o robô chegou aqui, a procuração é nova e merece dados frescos)
-        Logs.log_step(f" Procuração nova detectada para {cnpj}. Consultando Brasil API...")
-        sleep(1) # Pausa de segurança anti-bloqueio
-        nome_regime, checklist = Procuracoes.consultar_regime_tributario(cnpj)
+        Logs.log_step(f" Procuração detectada para {cnpj}. Consultando Brasil API...")
+        sleep(1) 
+        nome_regime = Procuracoes.consultar_regime_tributario(cnpj)
         
-        # 2. O BANCO VIRA O PLANO B: Só usamos o banco se a API falhar ou der erro de conexão.
         if "ERRO" in nome_regime or "FALHA" in nome_regime:
-            Logs.log_step(f"⚠️ API indisponível. Buscando histórico no banco para {cnpj}...")
-            
+            Logs.log_step(f"API indisponível. Buscando histórico no banco para {cnpj}...")
             try:
                 regime_salvo = db_instance.buscar_regime_da_empresa(cnpj)
                 if regime_salvo:
-                    regime_upper = str(regime_salvo).upper()
-                    if "SIMPLES NACIONAL" in regime_upper:
-                        return regime_salvo + " (Plano B)", Procuracoes.CHECKLIST_SN
-                    elif "LUCRO PRESUMIDO" in regime_upper or "REAL" in regime_upper:
-                        return regime_salvo + " (Plano B)", Procuracoes.CHECKLIST_LP_LR
-                    elif "MISTO" in regime_upper:
-                        return regime_salvo + " (Plano B)", Procuracoes.CHECKLIST_MISTO
+                    nome_regime = regime_salvo 
             except Exception as e:
-                Logs.log_fail(f"Aviso: Falha ao checar o banco como Plano B para {cnpj}: {e}")
+                Logs.log_fail(f"Aviso: Falha ao checar o banco para {cnpj}: {e}")
 
-        # Retorna o resultado oficial da API (ou o fallback caso o banco também falhe)
-        return nome_regime, checklist
+        # Busca os códigos cadastrados no banco para o regime detectado
+        checklist_correto = db_instance.buscar_checklist_por_regime(nome_regime)
+        return nome_regime, checklist_correto
