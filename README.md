@@ -1,195 +1,199 @@
+# Bot de Procurações e-CAC
 
----
-# 🏛️ TaxHub - Módulo de Procurações (e-CAC)
+Automação em Python para acessar o portal e-CAC com certificado digital, extrair procurações recebidas, auditar poderes por regime tributário e gravar os resultados no PostgreSQL.
 
-![Python](https://img.shields.io/badge/Python-3.8%2B-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white)
-![AWS RDS](https://img.shields.io/badge/AWS%20RDS-232F3E?style=for-the-badge&logo=amazon-aws&logoColor=white)
-![Status](https://img.shields.io/badge/Status-Active-success?style=for-the-badge)
+## Visão Geral
 
-> **Automação inteligente para gestão de procurações eletrônicas da Receita Federal.**
+Este projeto executa um fluxo de ponta a ponta:
 
-Este sistema é responsável por consultar, extrair e armazenar o histórico de procurações digitais diretamente do portal **e-CAC**. Ele resolve o problema da necessidade de **Certificados Digitais Locais** integrando-se a uma infraestrutura de nuvem centralizada.
+1. Abre navegador automatizado com SeleniumBase (modo CDP/UC).
+2. Realiza login no e-CAC com certificado digital.
+3. Navega até Minhas Autorizações e filtra procurações recebidas.
+4. Itera CNPJ por CNPJ da tabela.
+5. Detecta regime tributário pela BrasilAPI com fallback para histórico no banco.
+6. Obtém checklist de códigos esperados por regime.
+7. Tenta ler poderes via modal de visualização; se falhar, baixa PDF e extrai códigos.
+8. Classifica se todos os poderes conferem, se é procuração ampla ou se faltam códigos.
+9. Faz upsert no banco por chave composta CNPJ + validade.
+10. Salva relatório de erros de classificação em JSON quando necessário.
+11. Faz logout seguro do e-CAC.
 
----
+## Estrutura do Projeto
 
-## 📋 Tabela de Conteúdos
-1. [Arquitetura do Sistema](#-arquitetura-do-sistema)
-2. [Stack Tecnológico](#-stack-tecnológico)
-3. [Configuração (.env)](#-configuração-e-variáveis-de-ambiente)
-4. [Banco de Dados e Regras](#-banco-de-dados-e-regras-de-negócio)
-5. [Como Executar](#-como-executar)
-6. [Troubleshooting](#-troubleshooting)
+- main.py: ponto de entrada da execução.
+- Driver/ecac_navigation.py: orquestra inicialização, login, processamento e logout.
+- Driver/driver_login.py: fluxo de autenticação no e-CAC.
+- Driver/driver_procuracoes.py: extração, auditoria de poderes e integração com banco/API.
+- database_manager/BancoDeDados.py: camada de acesso ao PostgreSQL (consultas e upsert).
+- logs/logs.py: logs coloridos no console.
+- logs/loggingStderout.py: redirecionamento de stdout/stderr para arquivo de log diário.
+- utils/captchaHandler.py: suporte para hCaptcha (YesCaptcha), opcional no fluxo atual.
+- utils/deleteFiles.py: limpeza de diretórios de download.
+- test/teste_conexao.py: teste simples de conectividade com o banco.
+- downloads/procuracao: destino dos PDFs temporários baixados durante a execução.
 
----
+## Stack Técnica
 
-## 🏗 Arquitetura do Sistema
+- Python 3.10+
+- SeleniumBase e Selenium
+- BeautifulSoup4
+- Requests
+- PyPDF2
+- psycopg2
+- PostgreSQL
 
-O projeto opera em um modelo **Híbrido (Local + Nuvem)** para contornar a restrição de hardware dos tokens de certificado digital.
-```markdown
+Dependências completas estão em requirements.txt.
 
-flowchart LR
-    subgraph Local [🏢 Ambiente On-Premise (Escritório/Algar)]
-        direction TB
-        Token[🔐 Certificado Digital A1/A3]
-        Crawler[🤖 Robô/Crawler Python]
-        Token --> Crawler
-    end
+## Pré-requisitos
 
-    subgraph Cloud [☁️ AWS Cloud]
-        direction TB
-        DB[(🗄️ AWS RDS PostgreSQL)]
-        API[⚡ API Django REST]
-        DB <--> API
-    end
+1. Python instalado.
+2. Certificado digital funcional na máquina que executa o robô.
+3. Acesso de rede ao portal e-CAC e à URL do banco PostgreSQL.
+4. URL_BANCO configurada com credenciais válidas.
 
-    Crawler -- "Gravação Direta (psycopg2)" --> DB
-    API -- "JSON" --> Frontend[💻 Dashboard do Usuário]
+## Configuração
 
+Crie um arquivo .env na raiz do projeto com, no mínimo:
+
+```env
+URL_BANCO=postgresql://usuario:senha@host:5432/database
+CAPTCHA_SOLVER_API_KEY=sua_chave_opcional
+FOLDER_PATH=caminho_opcional_para_arquivos_de_captcha
 ```
 
-* **Crawler:** Executa em máquina local (IP Fixo) para acessar o e-CAC via certificado.
-* **Banco de Dados:** Centralizado na AWS para acesso global.
+Notas importantes:
 
----
+1. A URL do banco deve usar postgresql:// e nao jdbc:postgresql://.
+2. CAPTCHA_SOLVER_API_KEY só é necessário se o fluxo de captcha estiver ativo.
+3. O código também cria/usa automaticamente o diretório downloads/procuracao.
 
-## 🛠 Stack Tecnológico
+## Instalação
 
-| Componente | Tecnologia | Detalhe |
-| --- | --- | --- |
-| **Linguagem** | Python 3.x | Core da automação e backend. |
-| **Web Framework** | Django + DRF | API para consumo dos dados. |
-| **Database** | PostgreSQL | Hospedado no Amazon RDS. |
-| **Driver SQL** | `psycopg2-binary` | Conexão de alta performance p/ o Crawler. |
-| **Automação** | Selenium / Requests | Navegação no portal e-CAC. |
-
----
-
-## ⚙️ Configuração e Variáveis de Ambiente
-
-Crie um arquivo `.env` na raiz do projeto.
-
-> ⚠️ **Importante:** Para scripts Python, a URL do banco **NÃO** deve conter o prefixo `jdbc:`. Use o formato padrão `libpq`.
-
-```ini
-# .env
-
-# ✅ CORRETO (Para Python/Django/Psycopg2)
-URL_BANCO=postgresql://usuario:senha@taxallhub.c54ciw48evvs.us-east-1.rds.amazonaws.com:5432/taxhub
-
-# ❌ INCORRETO (Não use JDBC)
-# URL_BANCO=jdbc:postgresql://...
-
-# Configurações Gerais
-DEBUG=True
-SECRET_KEY=sua-chave-super-secreta
-
+```bash
+python -m venv .venv
+.venv\Scripts\activate
+pip install -r requirements.txt
 ```
 
----
+## Execução
 
-## 🗄️ Banco de Dados e Regras de Negócio
+Para rodar o bot:
 
-A tabela alvo é `procuracoes_recebidas` (ou `procuracoes_procuracao` no Django).
+```bash
+python main.py
+```
 
-### Estrutura da Tabela
+Fluxo resumido em runtime:
 
-| Campo | Tipo | Notas |
-| --- | --- | --- |
-| `cnpj` | `VARCHAR` | CNPJ do Outorgante (apenas números). |
-| `validade` | `DATE` | Data de expiração da procuração. |
-| `situacao` | `VARCHAR` | Ex: *Ativa*, *Cancelada*, *Vencida*. |
-| `data_extracao` | `TIMESTAMP` | Auditoria de quando o robô rodou. |
+1. Inicializa WebDriver em modo CDP.
+2. Faz login no e-CAC.
+3. Processa tabela de procurações recebidas.
+4. Persiste no banco.
+5. Encerra sessão com logout seguro.
 
-### 🔒 Integridade de Dados (Upsert)
+## Regras de Negócio de Auditoria
 
-Utilizamos uma **Constraint Composta** para permitir histórico de renovações, mas impedir duplicidade de dados idênticos.
+O módulo de poderes aplica três classificações principais:
 
-**1. A Constraint SQL:**
+1. Todos os poderes confere
+2. Todos os poderes confere (Procuração Ampla)
+3. Faltam N códigos: codigo1 | codigo2 | ...
+
+A classificação compara códigos encontrados no modal/PDF com os códigos esperados retornados da tabela de serviços por regime tributário.
+
+## Banco de Dados
+
+### Tabela principal
+
+Tabela usada pelo fluxo: procuracoes_recebidas.
+
+Campos relevantes utilizados no código:
+
+- razao_social
+- cnpj
+- regime
+- validade
+- situacao
+- data_extracao
+- poderes
+
+### Regra de unicidade e upsert
+
+O projeto considera chave composta cnpj + validade para evitar duplicidade da mesma procuração.
+
+Exemplo de índice/constraint esperado:
 
 ```sql
-ALTER TABLE procuracoes_recebidas 
+ALTER TABLE procuracoes_recebidas
 ADD CONSTRAINT unique_cnpj_validade UNIQUE (cnpj, validade);
-
 ```
 
-**2. O Script de Inserção (Python):**
-O sistema usa a estratégia `ON CONFLICT` para atualizar status ou ignorar duplicatas.
+O salvamento usa INSERT ... ON CONFLICT (cnpj, validade) DO UPDATE.
 
-```python
-sql = """
-    INSERT INTO procuracoes_recebidas (razao_social, cnpj, validade, situacao, data_extracao)
-    VALUES (%s, %s, %s, %s, CURRENT_TIMESTAMP)
-    ON CONFLICT (cnpj, validade) 
-    DO UPDATE SET
-        situacao = EXCLUDED.situacao,      -- Atualiza se o status mudou (ex: Cancelou)
-        data_extracao = CURRENT_TIMESTAMP; -- Marca que conferimos hoje
-"""
+### Tabela de checklist de serviços
 
-```
+A busca de códigos esperados é feita em servico_autorizacao, com filtros por regime e ativo = TRUE.
 
----
+## Logs e Artefatos
 
-## 🚀 Como Executar
+Saídas do processo:
 
-### Pré-requisitos
+1. Console com logs coloridos e timestamp.
+2. Arquivo de log diário em logs/logs/consumer_log_YYYY-MM-DD.log.
+3. Arquivo erros_classificacao.json na raiz quando houver falhas de extração.
+4. Arquivos temporários de download em downloads/procuracao.
 
-* Python 3.8+
-* Acesso à internet liberado para a porta `5432` (Postgres) da AWS.
-* Certificado Digital instalado na máquina.
+## Teste de Conectividade com Banco
 
-### Instalação das Dependências
+Para validar acesso ao banco:
 
 ```bash
-pip install -r requirements.txt
-# Certifique-se de que psycopg2-binary está no requirements
-
+python test/teste_conexao.py
 ```
 
-### Rodando o Crawler
+Esse script tenta conectar via URL_BANCO e executar SELECT version().
 
-```bash
-# Via comando Django
-python manage.py importar_procuracoes
+## Troubleshooting
 
-# OU via script direto
-python scripts/crawler_ecac.py
+### Falha de conexão no banco
 
-```
+Possíveis causas:
 
----
+1. URL_BANCO ausente ou inválida.
+2. Credenciais incorretas.
+3. Host/porta sem acesso de rede.
 
-## 🔧 Troubleshooting
+Ações:
 
-<details>
-<summary><strong>🔴 Erro: "cannot access local variable 'conexao'"</strong></summary>
+1. Validar .env.
+2. Executar python test/teste_conexao.py.
+3. Confirmar liberação de IP/security group no provedor do banco.
 
-* **Causa:** A conexão com o banco falhou dentro do `try` e a variável não foi iniciada.
-* **Correção:** Verifique se o IP da sua máquina está liberado no **Security Group da AWS** e se a `URL_BANCO` está correta.
+### API de regime indisponível
 
-</details>
+Comportamento do sistema:
 
-<details>
-<summary><strong>🔴 Erro: "duplicate key value violates unique constraint"</strong></summary>
+1. Tenta BrasilAPI até 3 vezes.
+2. Em falha, busca regime histórico no banco.
+3. Se ainda falhar, segue com fallback de regime.
 
-* **Causa:** O script tentou inserir um dado que já existe sem tratar o erro.
-* **Correção:** Certifique-se de que sua query SQL usa a cláusula `ON CONFLICT DO UPDATE/NOTHING`.
+### Modal/PDF não extraído
 
-</details>
+Comportamento:
 
-<details>
-<summary><strong>🔴 Erro: Protocolo inválido (JDBC)</strong></summary>
+1. Tenta modal.
+2. Se modal falhar, tenta PDF.
+3. Se ambos falharem, grava erro em erros_classificacao.json.
 
-* **Causa:** Uso de `jdbc:postgresql://` no `.env`.
-* **Correção:** Remova o `jdbc:`. O Python espera `postgresql://`.
+## Segurança e Boas Práticas
 
-</details>
+1. Não versionar .env nem credenciais.
+2. Não versionar arquivos de log e downloads temporários.
+3. Revisar políticas de acesso ao banco periodicamente.
+4. Evitar execução paralela do bot contra a mesma base sem coordenação.
 
----
+## Observações
 
-Made with 💙 by **TaxHub Team**
+1. O projeto atual não expõe API web neste repositório; é um executor de automação.
+2. A automação depende da estabilidade do layout do e-CAC; mudanças de interface podem exigir ajustes de seletores.
 
-```
-
-```
